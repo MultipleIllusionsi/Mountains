@@ -1,9 +1,9 @@
 {
-  "name": "template",
+  "name": "mountains",
   "version": "1.0.0",
   "description": "Landing page",
   "main": "./index.js",
-  "homepage": "https://multipleillusionsi.github.io/smth/",
+  "homepage": "https://multipleillusionsi.github.io/Mountains/",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",

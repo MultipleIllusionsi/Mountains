@@ -1,9 +1,9 @@
 {
-  "name": "landing",
+  "name": "mountains",
   "version": "1.0.0",
   "description": "Landing page",
   "main": "./index.js",
-  "homepage": "https://multipleillusionsi.github.io/smth/",
+  "homepage": "https://multipleillusionsi.github.io/Mountains/",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
