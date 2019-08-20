@@ -1,0 +1,15 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "./index.js",
+  "homepage": "https://multipleillusionsi.github.io/smth/",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Zakharov S.S.",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
