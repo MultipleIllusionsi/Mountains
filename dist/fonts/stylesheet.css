@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Bringin";
+  src: url("Bringin.otf") format("opentype"),
+    url("Bringin.ttf") format("truetype");
+
+  font-weight: bold;
+  font-style: normal;
+}
