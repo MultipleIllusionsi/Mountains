@@ -41,3 +41,22 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.section {
+  border-left: 1px solid #f9f9f9;
+  border-right: 1px solid #f9f9f9;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  // overflow: hidden;
+
+  @include response(tab-land) {
+    border-left: none;
+    border-right: none;
+  }
+}
