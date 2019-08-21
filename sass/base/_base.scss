@@ -22,24 +22,15 @@ html {
     font-size: 30%;
   }
 
-  @include response(big-desktop) {
-    font-size: 75%;
-  }
+  // @include response(big-desktop) {
+  //   font-size: 75%;
+  // }
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 400;
   line-height: 1.6;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
 }
 
 .container {
@@ -59,4 +50,18 @@ a {
     border-left: none;
     border-right: none;
   }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
 }

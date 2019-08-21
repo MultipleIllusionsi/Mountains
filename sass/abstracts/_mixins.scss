@@ -20,3 +20,47 @@
     } //1800
   }
 }
+
+///////FONTS
+@mixin Bringin {
+  font-family: Bringin;
+  font-weight: 400;
+}
+
+@mixin league {
+  font-family: league-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin sans($type) {
+  font-family: open-sans, sans-serif;
+  font-style: normal;
+
+  @if $type == bold {
+    font-weight: 700;
+  } @else if $type == extrabold {
+    font-weight: 800;
+  } @else if $type == light {
+    font-weight: 300;
+  } @else if $type == regular {
+    font-weight: 400;
+  }
+}
+
+@mixin raleway {
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin roboto($type) {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+
+  @if $type == light {
+    font-weight: 300;
+  } @else {
+    font-weight: 400;
+  }
+}

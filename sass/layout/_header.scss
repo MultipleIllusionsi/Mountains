@@ -1,26 +1,99 @@
 .header {
+  margin-top: 2rem;
   max-width: 1920px;
+  background-image: url(../img/header-img.png);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  // width: 100%;
+  // height: 0;
+  // padding-top: 36.4583%;
+
   position: relative;
 
   &-wrapper {
-    background: url(../img/header-img.png);
-    background-size: cover;
-    background-position: center;
-    height: 748px;
-    // width: 100%;
-    // height: 0;
-    // padding-top: 36.013481%;
+    // position: absolute;
+    // top: 0;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &-nav {
+    display: flex;
+
+    align-items: center;
+
+    &__logo {
+      @include Bringin;
+      font-size: 2.9rem;
+      color: #36aeea;
+      margin-right: 10rem;
+
+      & span {
+        color: #95a5ad;
+      }
+    }
+
+    &__links {
+      display: flex;
+      font-size: 1.6rem;
+      align-items: center;
+      &-item {
+        color: #9daeb6;
+        @include sans(bold);
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    &__btn {
+      margin-left: auto;
+    }
   }
 
-  & .heading-primary {
+  &-info {
+    width: 45%;
+    margin-top: 20rem;
+    margin-left: 5rem;
+  }
+
+  .heading-primary {
+    @include sans(bold);
+    font-size: 5rem;
+
+    color: #ffffff;
+
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    position: relative;
+
+    & span {
+      font-size: 6.6rem;
+      text-transform: none;
+      color: #56c7ff;
+      @include Bringin;
+      letter-spacing: 0.132rem;
+      position: absolute;
+      top: 40%;
+      left: 0;
+    }
   }
 
   & .text-tertiary {
+    margin-top: 3rem;
+    opacity: 0.75;
+    color: #ffffff;
+    @include sans(regular);
+    font-size: 1.8rem;
   }
 
   & .btn {
+    margin-top: 2.5rem;
   }
 }
