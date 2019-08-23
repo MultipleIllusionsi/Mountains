@@ -1,0 +1,22 @@
+.heading-secondary {
+  color: #2c2e37;
+  @include sans(bold);
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.351rem;
+}
+
+.heading-tertiary {
+  color: #2c2e37;
+  @include sans(bold);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.234rem;
+}
+
+.text-tertiary {
+  color: #949494;
+  @include sans(regular);
+  font-size: 1.4rem;
+}

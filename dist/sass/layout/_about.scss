@@ -1,0 +1,55 @@
+.about {
+  background-color: #f6f4f4;
+  background-image: url(../../img/about_bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+
+  &-info {
+    width: 41.5%;
+    padding-top: 15rem;
+    padding-bottom: 12rem;
+
+    & > * {
+      width: 80%;
+    }
+
+    & p {
+      margin-top: 2.7rem;
+    }
+
+    & button {
+      margin-top: 3rem;
+    }
+  }
+
+  &-img {
+    flex-grow: 1;
+    position: relative;
+
+    &--1 {
+      transform: translate(200px, -35px);
+      width: 100%;
+      padding-bottom: 8rem;
+      @include response(tab-land) {
+        width: 70%;
+        transform: none;
+        margin-left: auto;
+      }
+    }
+
+    &--2 {
+      position: absolute;
+      bottom: 25px;
+      left: 110px;
+      width: 45%;
+      @include response(tab-land) {
+        bottom: 0;
+        left: 0;
+        width: 45%;
+      }
+    }
+  }
+}
