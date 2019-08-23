@@ -328,18 +328,14 @@ body {
   font-weight: 400;
   line-height: 1.6; }
 
-.container:not(:first-child) {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem; }
-
-.section:not(:first-child) {
+.section {
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (max-width: 75em) {
-    .section:not(:first-child) {
+    .section {
       border-left: none;
       border-right: none; } }
 
@@ -379,6 +375,31 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem; }
+
+.heading-4 {
+  color: #212121;
+  font-family: open-sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.255rem; }
+
+.heading-5 {
+  color: #16b5ef;
+  font-family: open-sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.174rem; }
+
+.pagination {
+  color: #212121;
+  font-family: "Times New Roman PSMT";
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic; }
 
 .header {
   margin-top: 2rem;
@@ -454,19 +475,41 @@ h1 {
     margin-top: 2.5rem; }
 
 .about {
-  background-color: #f6f4f4;
-  background-image: url(../../img/about_bg.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  align-items: center; }
+  min-width: 100vw;
+  position: relative;
+  padding-right: 1.5rem;
+  padding-left: 1rem; }
+  .about::before {
+    content: "";
+    background-color: #f6f4f4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10; }
+  .about-wrapper {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../../img/about_bg.png);
+    background-position: 100% 15%;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: flex; }
   .about-info {
     width: 41.5%;
     padding-top: 15rem;
-    padding-bottom: 12rem; }
+    padding-bottom: 15rem; }
     .about-info > * {
       width: 80%; }
+    .about-info h3 {
+      position: relative;
+      display: inline-block; }
+      .about-info h3::before {
+        content: url(../../img/waves-u.png);
+        display: block;
+        margin-bottom: 3.5rem; }
     .about-info p {
       margin-top: 2.7rem; }
     .about-info button {
@@ -482,7 +525,7 @@ h1 {
         .about-img--1 {
           width: 70%;
           transform: none;
-          margin-left: auto; } }
+          margin-left: 30%; } }
     .about-img--2 {
       position: absolute;
       bottom: 25px;
@@ -493,6 +536,81 @@ h1 {
           bottom: 0;
           left: 0;
           width: 45%; } }
+
+.journal h2 {
+  text-align: center;
+  margin-top: 7rem; }
+  .journal h2::before {
+    content: url(../../img/waves-u.png);
+    display: block;
+    margin-bottom: 3.5rem; }
+
+.journal-content {
+  margin-top: 7rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  box-shadow: 0 0px 20px lightgray; }
+  .journal-content > * {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .journal-content__item--1 {
+    position: relative; }
+    .journal-content__item--1::after {
+      content: url(../../img/journal-1-logo.png);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .journal-content__item--1 img {
+      width: 100%; }
+  .journal-content__item--2 h4 {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
+  .journal-content__item--2 p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; }
+  .journal-content__item--3 {
+    position: relative; }
+    .journal-content__item--3::after {
+      content: url(../../img/journal-3-logo.png);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .journal-content__item--3 img {
+      width: 100%; }
+  .journal-content__item--4 h4 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; }
+  .journal-content__item--4 p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; }
+  .journal-content__item--5 {
+    position: relative; }
+    .journal-content__item--5::after {
+      content: url(../../img/journal-5-logo.png);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .journal-content__item--5 img {
+      width: 100%; }
+  .journal-content__item--6 h4 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  .journal-content__item--6 p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; }
 
 .btn-outline {
   width: 15.3rem;

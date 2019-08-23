@@ -20,3 +20,27 @@
   @include sans(regular);
   font-size: 1.4rem;
 }
+
+.heading-4 {
+  color: #212121;
+  @include sans(bold);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.255rem;
+}
+
+.heading-5 {
+  color: #16b5ef;
+  @include sans(bold);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.174rem;
+}
+
+.pagination {
+  color: #212121;
+  font-family: "Times New Roman PSMT";
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+}
