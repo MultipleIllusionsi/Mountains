@@ -1,0 +1,87 @@
+.about {
+  min-width: 100vw;
+  position: relative;
+  padding-right: 1.5rem;
+  padding-left: 1rem;
+
+  @include response(tab-land) {
+    // max-width: 1920px;
+    // min-width: 0;
+  }
+
+  &::before {
+    content: "";
+    background-color: #f6f4f4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+  }
+
+  &-wrapper {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../../img/about_bg.png);
+    background-position: 100% 15%;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: flex;
+  }
+
+  &-info {
+    width: 41.5%;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+
+    & > * {
+      width: 80%;
+    }
+
+    & h3 {
+      position: relative;
+      display: inline-block;
+
+      @include waves;
+    }
+    & p {
+      margin-top: 2.7rem;
+    }
+
+    & button {
+      margin-top: 3rem;
+    }
+  }
+
+  &-img {
+    flex-grow: 1;
+    position: relative;
+
+    &--1 {
+      transform: translate(200px, -35px);
+      width: 100%;
+      padding-bottom: 8rem;
+
+      @include response(tab-land) {
+        width: 70%;
+        transform: none;
+        margin-left: 30%;
+      }
+    }
+
+    &--2 {
+      position: absolute;
+      bottom: 25px;
+      left: 110px;
+      width: 45%;
+
+      @include response(tab-land) {
+        bottom: 0;
+        left: 0;
+        width: 45%;
+      }
+    }
+  }
+}

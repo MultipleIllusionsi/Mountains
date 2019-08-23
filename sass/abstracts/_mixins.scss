@@ -64,3 +64,12 @@
     font-weight: 400;
   }
 }
+
+///////////snippets
+@mixin waves {
+  &::before {
+    content: url(../../img/waves-u.png);
+    display: block;
+    margin-bottom: 3.5rem;
+  }
+}
