@@ -37,6 +37,7 @@
       }
 
       &--2 {
+        position: relative;
         & h4 {
           width: 85%;
           margin-left: auto;
@@ -46,6 +47,18 @@
           width: 70%;
           margin-left: auto;
           margin-right: auto;
+        }
+
+        &::after {
+          content: "";
+          height: 20px;
+          width: 20px;
+          background-color: white;
+          position: absolute;
+          top: 40px;
+          left: -7px;
+          transform: rotate(45deg);
+          z-index: 100;
         }
       }
 
@@ -65,6 +78,7 @@
       }
 
       &--4 {
+        position: relative;
         & h4 {
           width: 70%;
           margin-left: auto;
@@ -74,6 +88,18 @@
           width: 70%;
           margin-left: auto;
           margin-right: auto;
+        }
+
+        &::after {
+          content: "";
+          height: 20px;
+          width: 20px;
+          background-color: white;
+          position: absolute;
+          top: 40px;
+          right: -7px;
+          transform: rotate(45deg);
+          z-index: 100;
         }
       }
 
@@ -93,6 +119,7 @@
       }
 
       &--6 {
+        position: relative;
         & h4 {
           width: 50%;
           margin-left: auto;
@@ -102,6 +129,18 @@
           width: 70%;
           margin-left: auto;
           margin-right: auto;
+        }
+
+        &::after {
+          content: "";
+          height: 20px;
+          width: 20px;
+          background-color: white;
+          position: absolute;
+          top: -7px;
+          left: 40px;
+          transform: rotate(45deg);
+          z-index: 100;
         }
       }
     }

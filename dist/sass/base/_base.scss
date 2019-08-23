@@ -39,12 +39,11 @@ body {
 // }
 
 .section {
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
+  // border-left: 1px solid lightgray;
+  // border-right: 1px solid lightgray;
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  // overflow: hidden;
 
   @include response(tab-land) {
     border-left: none;

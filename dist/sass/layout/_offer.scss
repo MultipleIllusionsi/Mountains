@@ -1,0 +1,16 @@
+.offer {
+  min-width: 100vw;
+  position: relative;
+  padding-right: 1.5rem;
+  padding-left: 1rem;
+  text-align: left;
+  padding-top: 14rem;
+  background-color: #f6f4f4;
+
+  &-wrapper {
+    max-width: 1170px;
+    @include waves;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
