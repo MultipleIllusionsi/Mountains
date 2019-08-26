@@ -490,7 +490,7 @@ h1 {
     max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
-    background-image: url(../../img/about_bg.png);
+    background-image: url(../img/about_bg.png);
     background-position: 100% 15%;
     background-repeat: no-repeat;
     background-size: 90%;
@@ -505,7 +505,7 @@ h1 {
       position: relative;
       display: inline-block; }
       .about-info h3::before {
-        content: url(../../img/waves-u.png);
+        content: url(../img/waves-u.png);
         display: block;
         margin-bottom: 3.5rem; }
     .about-info p {
@@ -539,7 +539,7 @@ h1 {
   text-align: center;
   margin-top: 7rem; }
   .journal h2::before {
-    content: url(../../img/waves-u.png);
+    content: url(../img/waves-u.png);
     display: block;
     margin-bottom: 3.5rem; }
 
@@ -558,7 +558,7 @@ h1 {
   .journal-content__item--1 {
     position: relative; }
     .journal-content__item--1::after {
-      content: url(../../img/journal-1-logo.png);
+      content: url(../img/journal-1-logo.png);
       position: absolute;
       top: 50%;
       left: 50%;
@@ -588,7 +588,7 @@ h1 {
   .journal-content__item--3 {
     position: relative; }
     .journal-content__item--3::after {
-      content: url(../../img/journal-3-logo.png);
+      content: url(../img/journal-3-logo.png);
       position: absolute;
       top: 50%;
       left: 50%;
@@ -618,7 +618,7 @@ h1 {
   .journal-content__item--5 {
     position: relative; }
     .journal-content__item--5::after {
-      content: url(../../img/journal-5-logo.png);
+      content: url(../img/journal-5-logo.png);
       position: absolute;
       top: 50%;
       left: 50%;
@@ -648,20 +648,71 @@ h1 {
 
 .offer {
   min-width: 100vw;
-  position: relative;
   padding-right: 1.5rem;
   padding-left: 1rem;
   text-align: left;
   padding-top: 14rem;
+  background: url(../img/offer-big-tree.png) 90% bottom no-repeat/contain, url(../img/offer-sm-tree.png) 70% bottom no-repeat, url(../img/offer-bc-left.png) left bottom no-repeat, url(../img/offer-bc-right.png) right bottom no-repeat;
   background-color: #f6f4f4; }
   .offer-wrapper {
     max-width: 1170px;
+    z-index: 100;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    position: relative; }
     .offer-wrapper::before {
-      content: url(../../img/waves-u.png);
+      content: url(../img/waves-u.png);
       display: block;
       margin-bottom: 3.5rem; }
+  .offer-content {
+    width: 65%;
+    position: relative; }
+    .offer-content__text {
+      margin-top: 2.5rem;
+      font-size: 1.6rem; }
+    .offer-content__form {
+      margin-top: 3rem;
+      width: 100%;
+      display: flex;
+      border-radius: 0.4rem;
+      overflow: hidden; }
+      .offer-content__form div {
+        display: flex;
+        width: 70%;
+        position: relative; }
+        .offer-content__form div input {
+          width: 50%;
+          border: none;
+          padding-left: 2rem;
+          font-size: 1.6rem;
+          font-family: open-sans, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          letter-spacing: 0.032rem; }
+        .offer-content__form div::after {
+          content: "";
+          position: absolute;
+          width: 0.1rem;
+          height: 3.5rem;
+          background-color: #ebebeb;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+      .offer-content__form button {
+        width: 30%;
+        border-radius: 0.4rem; }
+    .offer-content__notice {
+      margin-top: 2.1rem;
+      padding-bottom: 25rem;
+      color: #36aeea;
+      font-family: open-sans, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.028rem;
+      display: flex;
+      align-items: center; }
+      .offer-content__notice img {
+        padding-right: 1.2rem; }
 
 .btn-outline {
   width: 15.3rem;
