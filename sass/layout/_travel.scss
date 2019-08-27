@@ -18,9 +18,95 @@
     margin-top: 10rem;
     padding-bottom: 48rem;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+
     &__item {
-      height: 380px;
+      padding-top: 34.356%;
+      height: 0;
+      width: 100%;
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: contain;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      & > div {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding-left: 2rem;
+      }
+
+      &-stars {
+        margin-top: 1rem;
+        & img {
+          width: 10%;
+          &:not(:last-child) {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      &-text {
+        & h4 {
+          color: #ffffff;
+          @include sans(regular);
+          font-size: 2.8rem;
+        }
+
+        & p {
+          margin-top: 1rem;
+          color: #ffffff;
+          @include sans(regular);
+          font-size: 1.6rem;
+        }
+      }
+
+      &-price {
+        margin-bottom: 1.3rem;
+        display: flex;
+        align-items: center;
+
+        & div:first-of-type {
+          color: #ffffff;
+          @include sans(regular);
+          font-size: 1.8rem;
+          text-decoration: line-through;
+        }
+
+        & div:last-of-type {
+          margin-left: auto;
+          margin-right: 2rem;
+          color: #ffffff;
+          @include sans(extrabold);
+          font-size: 2.6rem;
+        }
+      }
+
+      &--1 {
+        background-image: url(../img/travel-card-1.png);
+      }
+
+      &--2 {
+        background-image: url(../img/travel-card-2.png);
+      }
+
+      &--3 {
+        background-image: url(../img/travel-card-3.png);
+      }
+
+      &--4 {
+        background-image: url(../img/travel-card-4.png);
+      }
+
+      &--5 {
+        background-image: url(../img/travel-card-5.png);
+      }
     }
   }
 }
