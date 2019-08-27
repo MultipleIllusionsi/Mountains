@@ -1,0 +1,26 @@
+.travel {
+  min-width: 100vw;
+  margin-top: 10rem;
+  background: url(../img/travel-bc-dot.png) 40% 20% no-repeat,
+    url(../img/travel-bc-img.png) bottom no-repeat;
+  //url(tree.png) 90% bottom no-repeat/contain
+  &-wrapper {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+
+    & h2 {
+      @include waves;
+    }
+  }
+
+  &-list {
+    margin-top: 10rem;
+    padding-bottom: 48rem;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      height: 380px;
+    }
+  }
+}
