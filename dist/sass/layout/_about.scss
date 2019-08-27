@@ -3,22 +3,7 @@
   position: relative;
   padding-right: 1.5rem;
   padding-left: 1rem;
-
-  @include response(tab-land) {
-    // max-width: 1920px;
-    // min-width: 0;
-  }
-
-  &::before {
-    content: "";
-    background-color: #f6f4f4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -10;
-  }
+  background-color: #f6f4f4;
 
   &-wrapper {
     max-width: 1170px;

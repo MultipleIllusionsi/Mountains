@@ -60,7 +60,7 @@
 
   @if $type == light {
     font-weight: 300;
-  } @else {
+  } @else if $type == regular {
     font-weight: 400;
   }
 }
