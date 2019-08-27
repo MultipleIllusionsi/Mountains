@@ -1,0 +1,9 @@
+.gallery {
+  & h2 {
+    @include waves;
+    margin-top: 7rem;
+  }
+  &-content {
+    margin-top: 7rem;
+  }
+}
