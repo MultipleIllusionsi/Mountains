@@ -5,5 +5,27 @@
   }
   &-content {
     margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      &--1 {
+      }
+
+      &--2 {
+      }
+
+      &--3 {
+      }
+
+      &--4 {
+      }
+
+      &--5 {
+      }
+
+      &--6 {
+      }
+    }
   }
 }

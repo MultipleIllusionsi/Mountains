@@ -866,7 +866,9 @@ h1 {
     margin-bottom: 3.5rem; }
 
 .gallery-content {
-  margin-top: 7rem; }
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center; }
 
 .btn-outline {
   width: 15.3rem;
