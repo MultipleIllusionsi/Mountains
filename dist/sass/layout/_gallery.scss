@@ -6,25 +6,24 @@
   &-content {
     margin-top: 7rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
+    & > * {
+      display: flex;
+      flex-direction: column;
+    }
 
     &__item {
-      &--1 {
-      }
-
-      &--2 {
-      }
-
-      &--3 {
-      }
-
       &--4 {
+        margin-top: 3rem;
       }
 
       &--5 {
+        margin-top: 3rem;
       }
 
       &--6 {
+        margin-top: 3rem;
       }
     }
   }
