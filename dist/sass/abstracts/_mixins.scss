@@ -68,7 +68,7 @@
 ///////////snippets
 @mixin waves {
   &::before {
-    content: url(../img/waves-u.png);
+    content: url(../img/waves.svg);
     display: block;
     margin-bottom: 3.5rem;
   }
