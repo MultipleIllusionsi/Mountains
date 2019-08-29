@@ -1,7 +1,13 @@
 .journal {
-  & h2 {
-    @include waves;
-    margin-top: 7rem;
+  &-wrapper {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+
+    & h2 {
+      @include waves;
+      margin-top: 7rem;
+    }
   }
 
   &-content {

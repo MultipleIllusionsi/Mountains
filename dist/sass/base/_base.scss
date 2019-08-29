@@ -35,16 +35,10 @@ body {
 
 .container {
   min-width: 100vw;
-}
 
-.section {
-  max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-
-  @include response(tab-land) {
-    border-left: none;
-    border-right: none;
+  & > * {
+    position: relative;
+    background-color: #fff;
   }
 }
 

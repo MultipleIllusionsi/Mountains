@@ -330,15 +330,9 @@ body {
 
 .container {
   min-width: 100vw; }
-
-.section {
-  max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto; }
-  @media only screen and (max-width: 75em) {
-    .section {
-      border-left: none;
-      border-right: none; } }
+  .container > * {
+    position: relative;
+    background-color: #fff; }
 
 li {
   list-style: none; }
@@ -404,17 +398,19 @@ h1 {
   font-style: italic; }
 
 .header {
-  margin-top: 2rem;
-  min-width: 100vw;
-  background-image: url(../img/header-img.png);
-  background-size: cover;
-  background-position: center;
-  height: 700px;
-  position: relative; }
+  padding-top: 2rem;
+  background: url(../img/bc_rectangle.png) center 220px no-repeat, url(../img/header-img.png) center no-repeat/cover;
+  height: 700px; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      background: url(../img/header-img.png) center no-repeat/cover;
+      height: auto; } }
   .header-wrapper {
     max-width: 1170px;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
   .header-nav {
     display: flex;
     align-items: center; }
@@ -426,6 +422,9 @@ h1 {
       margin-right: 10rem; }
       .header-nav__logo span {
         color: #95a5ad; }
+      @media only screen and (max-width: 56.25em) {
+        .header-nav__logo {
+          order: 2; } }
     .header-nav__links {
       display: flex;
       font-size: 1.6rem;
@@ -440,12 +439,26 @@ h1 {
         text-transform: uppercase; }
         .header-nav__links-item:not(:last-child) {
           margin-right: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .header-nav__links {
+          order: 1;
+          display: none; } }
     .header-nav__btn {
       margin-left: auto; }
+      @media only screen and (max-width: 56.25em) {
+        .header-nav__btn {
+          order: 3; } }
   .header-info {
     width: 45%;
     margin-top: 20rem;
     margin-left: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .header-info {
+        width: 60%;
+        margin-top: 0;
+        margin-left: 5rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem; } }
   .header .heading-primary {
     font-family: open-sans, sans-serif;
     font-style: normal;
@@ -466,6 +479,7 @@ h1 {
       top: 40%;
       left: 0; }
   .header .text-tertiary {
+    width: 75%;
     margin-top: 3rem;
     opacity: 0.75;
     color: #ffffff;
@@ -477,8 +491,6 @@ h1 {
     margin-top: 2.5rem; }
 
 .about {
-  min-width: 100vw;
-  position: relative;
   padding-right: 1.5rem;
   padding-left: 1rem;
   background-color: #f6f4f4; }
@@ -531,12 +543,16 @@ h1 {
           left: 0;
           width: 45%; } }
 
-.journal h2 {
-  margin-top: 7rem; }
-  .journal h2::before {
-    content: url(../img/waves-u.png);
-    display: block;
-    margin-bottom: 3.5rem; }
+.journal-wrapper {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto; }
+  .journal-wrapper h2 {
+    margin-top: 7rem; }
+    .journal-wrapper h2::before {
+      content: url(../img/waves-u.png);
+      display: block;
+      margin-bottom: 3.5rem; }
 
 .journal-content {
   margin-top: 7rem;
@@ -642,7 +658,6 @@ h1 {
       z-index: 100; }
 
 .offer {
-  min-width: 100vw;
   padding-right: 1.5rem;
   padding-left: 1rem;
   text-align: left;
@@ -709,12 +724,16 @@ h1 {
       .offer-content__notice img {
         padding-right: 1.2rem; }
 
-.scheme h2 {
-  margin-top: 7rem; }
-  .scheme h2::before {
-    content: url(../img/waves-u.png);
-    display: block;
-    margin-bottom: 3.5rem; }
+.scheme-wrapper {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto; }
+  .scheme-wrapper h2 {
+    margin-top: 7rem; }
+    .scheme-wrapper h2::before {
+      content: url(../img/waves-u.png);
+      display: block;
+      margin-bottom: 3.5rem; }
 
 .scheme-content {
   margin-top: 7.5rem;
@@ -780,7 +799,6 @@ h1 {
         transform: translate(-50%, -50%); }
 
 .travel {
-  min-width: 100vw;
   margin-top: 10rem;
   background: url(../img/travel-bc-dot.png) 40% 20% no-repeat, url(../img/travel-bc-img.png) bottom no-repeat; }
   .travel-wrapper {
@@ -861,20 +879,28 @@ h1 {
       .travel-list__item--5 {
         background-image: url(../img/travel-card-5.png); }
 
-.gallery h2 {
-  margin-top: 7rem; }
-  .gallery h2::before {
-    content: url(../img/waves-u.png);
-    display: block;
-    margin-bottom: 3.5rem; }
+.gallery-wrapper {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto; }
+  .gallery-wrapper h2 {
+    margin-top: 7rem; }
+    .gallery-wrapper h2::before {
+      content: url(../img/waves-u.png);
+      display: block;
+      margin-bottom: 3.5rem; }
 
 .gallery-content {
   margin-top: 7rem;
   display: flex;
   justify-content: space-around; }
-  .gallery-content > * {
+  .gallery-content img[class^="gallery-content__item--"] {
+    width: 100%; }
+  .gallery-content div[class^="gallery-content__col--"] {
     display: flex;
     flex-direction: column; }
+    .gallery-content div[class^="gallery-content__col--"]:not(:last-of-type) {
+      padding-right: 3rem; }
   .gallery-content__item--4 {
     margin-top: 3rem; }
   .gallery-content__item--5 {
@@ -883,8 +909,6 @@ h1 {
     margin-top: 3rem; }
 
 .footer {
-  min-width: 100vw;
-  position: relative;
   background: url(../img/footer-bc-low.png) bottom no-repeat, url(../img/footer-bc-high.png) center 100% no-repeat; }
   .footer-wrapper {
     max-width: 1170px;
@@ -1034,7 +1058,12 @@ h1 {
   font-style: normal;
   font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: 0.192rem; }
+  letter-spacing: 0.192rem;
+  cursor: pointer;
+  transition: all 0.4s; }
+  .btn-outline:hover {
+    background-color: #36aeea;
+    color: #fff; }
 
 .btn {
   width: 25.3rem;
@@ -1043,10 +1072,14 @@ h1 {
   border-radius: 0.4rem;
   background-color: #36aeea;
   border: none;
-  color: #ffffff;
+  cursor: pointer;
+  color: #fff;
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 0.224rem; }
+  letter-spacing: 0.224rem;
+  transition: all 0.4s; }
+  .btn:hover {
+    background-color: #1486bf; }

@@ -9,6 +9,13 @@
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.192rem;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: #36aeea;
+    color: #fff;
+  }
 }
 
 .btn {
@@ -18,10 +25,16 @@
   border-radius: 0.4rem;
   background-color: #36aeea;
   border: none;
+  cursor: pointer;
 
-  color: #ffffff;
+  color: #fff;
   @include raleway;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.224rem;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: darken($color: #36aeea, $amount: 15);
+  }
 }

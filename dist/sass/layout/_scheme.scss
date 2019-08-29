@@ -1,7 +1,13 @@
 .scheme {
-  & h2 {
-    margin-top: 7rem;
-    @include waves;
+  &-wrapper {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+
+    & h2 {
+      margin-top: 7rem;
+      @include waves;
+    }
   }
 
   &-content {
