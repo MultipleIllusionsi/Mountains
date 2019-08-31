@@ -3,10 +3,10 @@
   padding-left: 1rem;
   text-align: left;
   padding-top: 14rem;
-  background: url(../img/offer-big-tree.png) 90% bottom no-repeat/contain,
-    url(../img/offer-sm-tree.png) 70% bottom no-repeat,
-    url(../img/offer-bc-left.png) left bottom no-repeat,
-    url(../img/offer-bc-right.png) right bottom no-repeat;
+  background: url(../img/offer-big-tree.png) 90% bottom no-repeat fixed,
+    url(../img/offer-sm-tree.png) 70% bottom no-repeat fixed,
+    url(../img/offer-bc-left.png) left bottom no-repeat fixed,
+    url(../img/offer-bc-right.png) right bottom no-repeat fixed;
   background-color: #f6f4f4;
 
   &-wrapper {
