@@ -1,6 +1,8 @@
 .footer {
   background: url(../img/footer-bc-low.png) bottom no-repeat,
     url(../img/footer-bc-high.png) center 100% no-repeat;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 
   &-wrapper {
     max-width: 1170px;
@@ -72,6 +74,10 @@
     margin-right: auto;
     text-align: center;
 
+    @include response(tab-land) {
+      margin-top: 30rem;
+    }
+
     &__heading {
       @include sans(bold);
       text-transform: uppercase;
@@ -86,6 +92,9 @@
       @include sans(regular);
       font-size: 1.6rem;
       color: #383e4a;
+      @include response(tab-land) {
+        font-weight: bold;
+      }
     }
 
     &__form {
@@ -101,7 +110,7 @@
         padding-left: 2rem;
         @include roboto(regular);
         font-size: 1.8rem;
-        color: #cccccc;
+        color: #383e4a;
         border-radius: 0.4rem;
         border: 0.3rem solid #ffffff;
         background-color: #ffffff;

@@ -17,7 +17,8 @@
     margin-top: 10rem;
     padding-bottom: 48rem;
     display: flex;
-    // justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     &__item {
       padding-top: 34.356%;
@@ -39,6 +40,7 @@
         justify-content: space-between;
         height: 100%;
         padding-left: 2rem;
+        padding-right: 2.2rem;
       }
 
       &-stars {
@@ -56,6 +58,10 @@
           color: #ffffff;
           @include sans(regular);
           font-size: 2.8rem;
+
+          @include response(tab-land) {
+            font-size: 2.5rem;
+          }
         }
 
         & p {
@@ -63,6 +69,10 @@
           color: #ffffff;
           @include sans(regular);
           font-size: 1.6rem;
+
+          @include response(tab-land) {
+            font-size: 1.4rem;
+          }
         }
       }
 
@@ -76,14 +86,22 @@
           @include sans(regular);
           font-size: 1.8rem;
           text-decoration: line-through;
+
+          @include response(tab-land) {
+            font-size: 1.6rem;
+          }
         }
 
         & div:last-of-type {
           margin-left: auto;
-          margin-right: 2rem;
+
           color: #ffffff;
           @include sans(extrabold);
           font-size: 2.6rem;
+
+          @include response(tab-land) {
+            font-size: 2.2rem;
+          }
         }
       }
 
