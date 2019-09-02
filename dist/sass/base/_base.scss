@@ -34,8 +34,6 @@ body {
 }
 
 .container {
-  min-width: 100vw;
-
   & > * {
     position: relative;
     background-color: #fff;

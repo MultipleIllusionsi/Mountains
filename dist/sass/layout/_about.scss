@@ -1,8 +1,11 @@
 .about {
   padding-right: 1.5rem;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   background-color: #f6f4f4;
-
+  @include response(tab-land) {
+    padding-right: 0;
+    padding-left: 0;
+  }
   &-wrapper {
     max-width: 1170px;
     margin-right: auto;
@@ -12,15 +15,29 @@
     background-repeat: no-repeat;
     background-size: 90%;
     display: flex;
+
+    @include response(tab-land) {
+      background-position: 200% 15%;
+    }
   }
 
   &-info {
     width: 41.5%;
+    margin-left: 5rem;
     padding-top: 15rem;
     padding-bottom: 15rem;
 
+    @include response(tab-land) {
+      padding-bottom: 10rem;
+      padding-top: 10rem;
+    }
+
     & > * {
       width: 80%;
+
+      @include response(tab-land) {
+        width: 85%;
+      }
     }
 
     & h3 {
@@ -35,6 +52,7 @@
 
     & button {
       margin-top: 3rem;
+      width: 80%;
     }
   }
 
@@ -43,14 +61,22 @@
     position: relative;
 
     &--1 {
-      transform: translate(200px, -35px);
+      position: absolute;
+      top: -35px;
+      left: 200px;
       width: 100%;
       padding-bottom: 8rem;
 
-      @include response(tab-land) {
+      @include response(notebook) {
         width: 70%;
-        transform: none;
+        position: initial;
         margin-left: 30%;
+      }
+
+      @include response(tab-land) {
+        width: 80%;
+        position: initial;
+        margin-left: 20%;
       }
     }
 
@@ -63,7 +89,7 @@
       @include response(tab-land) {
         bottom: 0;
         left: 0;
-        width: 45%;
+        width: 50%;
       }
     }
   }
