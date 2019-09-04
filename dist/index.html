@@ -17,8 +17,8 @@
           <nav class="header-nav">
             <div class="header-nav__logo">Moun<span>tains</span></div>
 
-            <input type="checkbox" id="chk" />
-            <label for="chk" class="show-menu-btn">
+            <input type="checkbox" id="menu" />
+            <label for="menu" class="show-menu-btn">
               <img
                 src="./img/show-menu-btn.svg"
                 class="show-menu-btn"
@@ -34,7 +34,7 @@
               <li class="header-nav__links-item"><a href="#">Contact</a></li>
               <li class="header-nav__links-item"><a href="#">Work</a></li>
               <li class="header-nav__links-item"><a href="#">Journal</a></li>
-              <label for="chk" class="header-nav__links-item">
+              <label for="menu" class="header-nav__links-item">
                 <img
                   src="./img/hide-menu-btn.svg"
                   class="hide-menu-btn"
@@ -84,12 +84,12 @@
         <div class="journal-wrapper">
           <h2 class="heading-secondary">Our journal</h2>
 
-          <div class="journal-content">
-            <div class="journal-content__item--1">
+          <ul class="journal-content">
+            <li class="journal-content__item--1">
               <img src="./img/journal-1.png" alt="journal-1" />
-            </div>
+            </li>
 
-            <div class="journal-content__item--2">
+            <li class="journal-content__item--2">
               <h5 class="heading-5">Love</h5>
               <h4 class="heading-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -100,13 +100,13 @@
                 experience and skills.
               </p>
               <span class="pagination">03</span>
-            </div>
+            </li>
 
-            <div class="journal-content__item--3">
+            <li class="journal-content__item--3">
               <img src="./img/journal-3.png" alt="journal-3" />
-            </div>
+            </li>
 
-            <div class="journal-content__item--4">
+            <li class="journal-content__item--4">
               <h5 class="heading-5">Tree</h5>
               <h4 class="heading-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -117,13 +117,13 @@
                 very first day until now.
               </p>
               <span class="pagination">02</span>
-            </div>
+            </li>
 
-            <div class="journal-content__item--5">
+            <li class="journal-content__item--5">
               <img src="./img/journal-5.png" alt="journal-5" />
-            </div>
+            </li>
 
-            <div class="journal-content__item--6">
+            <li class="journal-content__item--6">
               <h5 class="heading-5">Water</h5>
               <h4 class="heading-4">LITTLE PIECES OF OUR PROUDNESS</h4>
               <p class="text-tertiary">
@@ -132,8 +132,8 @@
                 to know about?
               </p>
               <span class="pagination">03</span>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- offer -->
@@ -163,11 +163,6 @@
               />
               <button type="submit" class="btn">Order now</button>
             </form>
-
-            <div class="offer-content__notice text-tertiary">
-              <img src="./img/offer-lock.svg" alt="lock" />
-              <p>Your data will not be transferred</p>
-            </div>
           </div>
         </div>
       </section>
