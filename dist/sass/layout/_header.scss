@@ -20,6 +20,11 @@
   &-nav {
     display: flex;
     align-items: center;
+    transition: 0.4s;
+
+    @include response(phone) {
+      justify-content: space-between;
+    }
 
     &__logo {
       @include Bringin;
@@ -31,8 +36,9 @@
         color: #95a5ad;
       }
 
-      @include response(tab-port) {
-        order: 2;
+      @include response(phone) {
+        margin: 0;
+        order: 1;
       }
     }
 
@@ -58,25 +64,46 @@
           width: 0;
           height: 0;
           background-color: #36aeea;
+
+          @include response(phone) {
+            content: none;
+          }
         }
 
         &:hover::after {
           width: 100%;
           height: 2px;
         }
+
+        @include response(phone) {
+          font-size: 4rem;
+          padding: 2rem 0;
+          &:not(:last-child) {
+            margin-right: 0rem;
+          }
+        }
       }
 
-      @include response(tab-port) {
-        order: 1;
-        display: none;
+      @include response(phone) {
+        position: fixed;
+        background-color: #333;
+        right: -100%;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px 0;
+        z-index: 10000;
+        flex-direction: column;
+        transition: 0.7s;
       }
     }
 
     &__btn {
       margin-left: auto;
 
-      @include response(tab-port) {
-        order: 3;
+      @include response(phone) {
+        margin: 0;
+        order: 1;
       }
     }
   }
@@ -93,6 +120,13 @@
       padding-top: 10rem;
       padding-bottom: 10rem;
     }
+
+    @include response(phone) {
+      width: 70%;
+      margin: 0;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
   }
 
   .heading-primary {
@@ -103,6 +137,10 @@
     text-transform: uppercase;
     position: relative;
 
+    @include response(phone) {
+      font-size: 4rem;
+    }
+
     & span {
       font-size: 6.6rem;
       text-transform: none;
@@ -112,6 +150,10 @@
       position: absolute;
       top: 40%;
       left: 0;
+
+      @include response(phone) {
+        font-size: 5rem;
+      }
     }
   }
 
@@ -126,5 +168,35 @@
 
   & .btn {
     margin-top: 2.5rem;
+  }
+}
+
+.show-menu-btn {
+  order: 4;
+  width: 5rem;
+}
+
+.hide-menu-btn {
+  width: 8rem;
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+  display: none;
+
+  @include response(phone) {
+    display: block;
+  }
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+
+  @include response(phone) {
+    &:checked ~ .header-nav__links {
+      right: 0;
+    }
   }
 }

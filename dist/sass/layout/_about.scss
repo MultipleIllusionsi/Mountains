@@ -32,6 +32,14 @@
       padding-top: 10rem;
     }
 
+    @include response(phone) {
+      margin: 0;
+      padding-left: 1.5em;
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+      width: 100%;
+    }
+
     & > * {
       width: 80%;
 
@@ -77,6 +85,12 @@
         width: 80%;
         position: initial;
         margin-left: 20%;
+      }
+
+      @include response(phone) {
+        width: 90%;
+        position: initial;
+        margin-left: 10%;
       }
     }
 
