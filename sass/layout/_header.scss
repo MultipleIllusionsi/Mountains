@@ -104,6 +104,7 @@
       @include response(phone) {
         margin: 0;
         order: 1;
+        margin-right: 5rem;
       }
     }
   }
@@ -168,6 +169,7 @@
 
   & .btn {
     margin-top: 2.5rem;
+    width: 50%;
   }
 }
 
@@ -189,7 +191,7 @@
   }
 }
 
-#chk {
+#menu {
   position: absolute;
   visibility: hidden;
   z-index: -1111;

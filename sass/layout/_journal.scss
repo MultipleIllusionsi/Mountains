@@ -17,12 +17,16 @@
     flex-wrap: wrap;
     text-align: center;
 
-    box-shadow: 0 0px 20px lightgray;
+    box-shadow: 0 0px 2rem lightgray;
     & > * {
       width: calc(100% / 3);
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+
+      @include response(phone) {
+        width: calc(100% / 2);
+      }
     }
 
     &__item {
@@ -56,12 +60,12 @@
 
         &::after {
           content: "";
-          height: 20px;
-          width: 20px;
+          height: 2rem;
+          width: 2rem;
           background-color: white;
           position: absolute;
-          top: 40px;
-          left: -7px;
+          top: 4rem;
+          left: -1rem;
           transform: rotate(45deg);
           z-index: 100;
         }
@@ -80,6 +84,10 @@
         & img {
           width: 100%;
         }
+
+        @include response(phone) {
+          order: 4;
+        }
       }
 
       &--4 {
@@ -97,14 +105,24 @@
 
         &::after {
           content: "";
-          height: 20px;
-          width: 20px;
+          height: 2rem;
+          width: 2rem;
           background-color: white;
           position: absolute;
-          top: 40px;
-          right: -7px;
+          top: 4rem;
+          right: -1rem;
           transform: rotate(45deg);
           z-index: 100;
+
+          @include response(phone) {
+            top: initial;
+            bottom: -1rem;
+            right: 4rem;
+          }
+        }
+
+        @include response(phone) {
+          order: 3;
         }
       }
 
@@ -120,6 +138,10 @@
 
         & img {
           width: 100%;
+        }
+
+        @include response(phone) {
+          order: 5;
         }
       }
 
@@ -138,14 +160,18 @@
 
         &::after {
           content: "";
-          height: 20px;
-          width: 20px;
+          height: 2rem;
+          width: 2rem;
           background-color: white;
           position: absolute;
-          top: -7px;
-          left: 40px;
+          top: -1rem;
+          left: 4rem;
           transform: rotate(45deg);
           z-index: 100;
+        }
+
+        @include response(phone) {
+          order: 6;
         }
       }
     }

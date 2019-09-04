@@ -16,12 +16,19 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
 
     &__item {
       width: 20%;
-
+      @include response(phone) {
+        width: 40%;
+        &:nth-last-child(-n + 2) {
+          // last two elements
+          margin-top: 5rem;
+        }
+      }
       & figure {
         display: flex;
         flex-direction: column;

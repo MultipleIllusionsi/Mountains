@@ -16,6 +16,14 @@
       url(../img/offer-bc-right.png) right bottom no-repeat;
     background-color: #f6f4f4;
   }
+  @include response(phone) {
+    background: url(../img/offer-big-tree.png) 150% bottom no-repeat/70%,
+      url(../img/offer-sm-tree.png) 60% bottom no-repeat/50%,
+      url(../img/offer-bc-left.png) left bottom no-repeat/70%,
+      url(../img/offer-bc-right.png) right bottom no-repeat/100%;
+    background-color: #f6f4f4;
+  }
+
   &-wrapper {
     max-width: 1170px;
     z-index: 100;
@@ -38,9 +46,12 @@
       margin-left: 3.5rem;
     }
 
+    @include response(tab-land) {
+      margin-left: 0;
+    }
+
     &__text {
       margin-top: 2.5rem;
-      font-size: 1.6rem;
       width: 80%;
 
       @include response(tab-land) {
@@ -58,6 +69,11 @@
       width: 100%;
       position: relative;
 
+      padding-bottom: 25rem;
+
+      @include response(phone) {
+        padding-bottom: 14rem;
+      }
       @include response(tab-land) {
         flex-direction: column;
       }
@@ -97,20 +113,6 @@
         @include response(tab-land) {
           width: 50%;
         }
-      }
-    }
-
-    &__notice {
-      margin-top: 2.1rem;
-      padding-bottom: 25rem;
-      color: #36aeea;
-      @include sans(regular);
-      letter-spacing: 0.028rem;
-      display: flex;
-      align-items: center;
-
-      & img {
-        padding-right: 1.2rem;
       }
     }
   }
