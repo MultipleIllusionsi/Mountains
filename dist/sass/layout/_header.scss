@@ -88,11 +88,11 @@
       @include response(phone) {
         position: fixed;
         background-color: #333;
-        right: -100%;
+        right: -105%;
         top: 0;
         width: 100vw;
         height: 100vh;
-        padding: 80px 0;
+        padding: 8rem 0;
         z-index: 10000;
         flex-direction: column;
         transition: 0.7s;
@@ -171,9 +171,25 @@
   }
 }
 
-.show-menu-btn {
+label.show-menu {
+  display: none;
   order: 4;
-  width: 6rem;
+  @include response(phone) {
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+  }
+}
+
+.show-menu-btn {
+  width: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hide-menu-btn {
