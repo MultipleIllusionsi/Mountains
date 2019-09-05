@@ -6,7 +6,7 @@
 
   @include response(phone) {
     background: url(../img/footer-bc-low.png) bottom no-repeat,
-      url(../img/footer-bc-high.png) center 170% no-repeat;
+      url(../img/footer-bc-high.png) 20% 100% no-repeat;
   }
 
   &-wrapper {
@@ -25,8 +25,10 @@
     margin-top: 9rem;
     display: flex;
     justify-content: space-between;
+
     @include response(phone) {
       flex-direction: column;
+      padding-bottom: 20rem;
     }
 
     &--1 {
@@ -108,7 +110,6 @@
 
     @include response(tab-land) {
       margin-top: 30rem;
-      width: 50%;
     }
     @include response(phone) {
       width: 70%;
@@ -131,13 +132,18 @@
 
     &__text {
       @include sans(regular);
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       color: #383e4a;
+
       @include response(tab-land) {
-        font-weight: bold;
-      }
-      @include response(phone) {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 2rem;
+      }
+
+      @include response(phone) {
+        font-size: 2.4rem;
       }
     }
 
