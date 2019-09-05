@@ -4,6 +4,11 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 
+  @include response(phone) {
+    background: url(../img/footer-bc-low.png) bottom no-repeat,
+      url(../img/footer-bc-high.png) center 170% no-repeat;
+  }
+
   &-wrapper {
     max-width: 1170px;
     z-index: 100;
@@ -20,9 +25,28 @@
     margin-top: 9rem;
     display: flex;
     justify-content: space-between;
+    @include response(phone) {
+      flex-direction: column;
+    }
+
+    &--1 {
+      width: 48%;
+      @include response(phone) {
+        margin-left: auto;
+        width: 70%;
+      }
+    }
+
+    &--2 {
+      width: 48%;
+      @include response(phone) {
+        margin-right: auto;
+        width: 70%;
+        margin-top: 8rem;
+      }
+    }
 
     & > * {
-      width: 48%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -47,6 +71,10 @@
         position: absolute;
         top: -7rem;
       }
+
+      @include response(phone) {
+        font-size: 2.2rem;
+      }
     }
 
     &__author {
@@ -57,6 +85,10 @@
 
       & span {
         @include sans(regular);
+      }
+
+      @include response(phone) {
+        font-size: 2.4rem;
       }
     }
   }
@@ -76,6 +108,11 @@
 
     @include response(tab-land) {
       margin-top: 30rem;
+      width: 50%;
+    }
+    @include response(phone) {
+      width: 70%;
+      margin-top: 50rem;
     }
 
     &__heading {
@@ -86,6 +123,10 @@
       color: #36aeea;
       letter-spacing: 0.36rem;
       z-index: 10;
+
+      @include response(phone) {
+        font-size: 4.6rem;
+      }
     }
 
     &__text {
@@ -94,6 +135,9 @@
       color: #383e4a;
       @include response(tab-land) {
         font-weight: bold;
+      }
+      @include response(phone) {
+        font-size: 2rem;
       }
     }
 
@@ -118,10 +162,14 @@
         &::placeholder {
           color: #cccccc;
         }
+
+        @include response(phone) {
+          font-size: 2.2rem;
+        }
       }
 
       &-btn {
-        width: 100% !important;
+        width: 100%;
         margin-bottom: 4rem;
       }
     }
@@ -134,11 +182,21 @@
     justify-content: space-between;
     align-items: center;
 
+    @include response(phone) {
+      height: 13.5rem;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
     &__item {
       &:first-of-type {
         color: #618a97;
         @include sans(regular);
         font-size: 1.8rem;
+
+        @include response(phone) {
+          order: 3;
+        }
       }
 
       &:last-of-type {

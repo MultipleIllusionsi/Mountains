@@ -29,6 +29,7 @@
           margin-top: 5rem;
         }
       }
+
       & figure {
         display: flex;
         flex-direction: column;
@@ -38,13 +39,21 @@
           margin-top: 3rem;
           color: #949494;
           @include roboto(light);
-          font-size: 1.6rem;
+          font-size: 1.8rem;
+
+          @include response(phone) {
+            font-size: 2.4rem;
+          }
 
           &::first-line {
             color: #2c2e37;
             @include roboto(regular);
             font-size: 1.8rem;
             font-weight: bold;
+
+            @include response(phone) {
+              font-size: 2.4rem;
+            }
           }
         }
       }

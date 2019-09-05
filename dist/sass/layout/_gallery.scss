@@ -13,22 +13,48 @@
   &-content {
     margin-top: 7rem;
     display: flex;
-    justify-content: space-around;
+    width: 100%;
 
+    @include response(phone) {
+      flex-wrap: wrap;
+    }
     img[class^="gallery-content__item--"] {
       width: 100%;
     }
 
-    div[class^="gallery-content__col--"] {
-      display: flex;
-      flex-direction: column;
-
-      &:not(:last-of-type) {
+    &__col {
+      &--1 {
         padding-right: 3rem;
+        @include response(phone) {
+          width: 45%;
+          padding-right: 3rem;
+        }
+      }
+
+      &--2 {
+        padding-right: 3rem;
+        @include response(phone) {
+          width: 55%;
+          padding-right: 0;
+        }
+      }
+
+      &--3 {
+        @include response(phone) {
+          display: flex;
+          width: 50%;
+          margin-top: 3rem;
+        }
       }
     }
 
     &__item {
+      &--3 {
+        @include response(phone) {
+          padding-right: 3rem;
+        }
+      }
+
       &--4 {
         margin-top: 3rem;
       }
@@ -39,6 +65,9 @@
 
       &--6 {
         margin-top: 3rem;
+        @include response(phone) {
+          margin-top: 0;
+        }
       }
     }
   }

@@ -39,6 +39,7 @@
       @include response(phone) {
         margin: 0;
         order: 1;
+        font-size: 4.5rem;
       }
     }
 
@@ -123,7 +124,7 @@
     }
 
     @include response(phone) {
-      width: 70%;
+      width: 85%;
       margin: 0;
       padding-top: 10rem;
       padding-bottom: 10rem;
@@ -138,10 +139,6 @@
     text-transform: uppercase;
     position: relative;
 
-    @include response(phone) {
-      font-size: 4rem;
-    }
-
     & span {
       font-size: 6.6rem;
       text-transform: none;
@@ -151,10 +148,6 @@
       position: absolute;
       top: 40%;
       left: 0;
-
-      @include response(phone) {
-        font-size: 5rem;
-      }
     }
   }
 
@@ -165,6 +158,11 @@
     color: #ffffff;
     @include sans(regular);
     font-size: 1.8rem;
+
+    @include response(phone) {
+      width: 75%;
+      font-size: 2.6rem;
+    }
   }
 
   & .btn {
@@ -175,11 +173,12 @@
 
 .show-menu-btn {
   order: 4;
-  width: 5rem;
+  width: 6rem;
 }
 
 .hide-menu-btn {
   width: 8rem;
+  margin-top: 10rem;
 }
 
 .show-menu-btn,
