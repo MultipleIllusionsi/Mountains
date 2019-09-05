@@ -1,7 +1,14 @@
 .travel {
   margin-top: 10rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   background: url(../img/travel-bc-dot.png) 40% 20% no-repeat,
     url(../img/travel-bc-img.png) bottom no-repeat;
+
+  @include response(phone) {
+    background: url(../img/travel-bc-dot.png) 40% 20% no-repeat/cover,
+      url(../img/travel-bc-img.png) bottom no-repeat/cover;
+  }
 
   &-wrapper {
     max-width: 1170px;
@@ -17,16 +24,25 @@
     margin-top: 10rem;
     padding-bottom: 48rem;
     display: flex;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    justify-content: space-evenly;
+    @include response(phone) {
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
 
     &__item {
       padding-top: 34.356%;
       height: 0;
-      width: 100%;
+      width: 20%;
       background-repeat: no-repeat;
       position: relative;
-      background-size: contain;
+      background-size: cover;
+
+      @include response(phone) {
+        width: 30%;
+        margin-top: 5rem;
+        padding-top: 50%;
+      }
 
       &:not(:last-child) {
         margin-right: 2rem;
@@ -41,6 +57,11 @@
         height: 100%;
         padding-left: 2rem;
         padding-right: 2.2rem;
+
+        @include response(phone) {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
       }
 
       &-stars {
@@ -62,6 +83,10 @@
           @include response(tab-land) {
             font-size: 2.5rem;
           }
+
+          @include response(phone) {
+            font-size: 3.5rem;
+          }
         }
 
         & p {
@@ -72,6 +97,10 @@
 
           @include response(tab-land) {
             font-size: 1.4rem;
+          }
+
+          @include response(phone) {
+            font-size: 2rem;
           }
         }
       }
