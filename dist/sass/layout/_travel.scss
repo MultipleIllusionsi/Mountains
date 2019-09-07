@@ -24,28 +24,26 @@
     margin-top: 10rem;
     padding-bottom: 48rem;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     @include response(phone) {
-      flex-wrap: wrap;
       margin-top: 2rem;
+      justify-content: space-evenly;
     }
 
     &__item {
       padding-top: 34.356%;
       height: 0;
-      width: 20%;
+      width: 18%;
       background-repeat: no-repeat;
       position: relative;
       background-size: cover;
 
       @include response(phone) {
-        width: 30%;
+        width: 29%;
         margin-top: 5rem;
         padding-top: 50%;
-      }
-
-      &:not(:last-child) {
-        margin-right: 2rem;
       }
 
       & > div {

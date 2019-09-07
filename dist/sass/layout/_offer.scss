@@ -31,11 +31,6 @@
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    @include response(tab-land) {
-      &::before {
-        margin-left: 3.5rem;
-      }
-    }
   }
 
   &-content {
@@ -43,11 +38,8 @@
     position: relative;
 
     @include response(tab-land) {
-      margin-left: 3.5rem;
-    }
-
-    @include response(tab-land) {
       margin-left: 0;
+      width: 45%;
     }
 
     &__text {
@@ -55,7 +47,7 @@
       width: 80%;
 
       @include response(tab-land) {
-        width: 50%;
+        width: 100%;
       }
     }
 
@@ -87,7 +79,7 @@
         letter-spacing: 0.032rem;
 
         @include response(tab-land) {
-          width: 50%;
+          width: 100%;
         }
       }
 
@@ -111,7 +103,7 @@
         border-radius: 0.4rem;
 
         @include response(tab-land) {
-          width: 50%;
+          width: 100%;
         }
       }
     }
