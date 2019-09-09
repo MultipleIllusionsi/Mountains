@@ -61,12 +61,16 @@
 
       &--5 {
         margin-top: 3rem;
+        @include response(phone) {
+          width: 50%;
+        }
       }
 
       &--6 {
         margin-top: 3rem;
         @include response(phone) {
           margin-top: 0;
+          width: 50%;
         }
       }
     }
