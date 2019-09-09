@@ -193,7 +193,7 @@
     @include response(phone) {
       height: 13.5rem;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
 
     &__item {
