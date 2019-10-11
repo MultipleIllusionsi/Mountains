@@ -653,7 +653,7 @@ label.show-menu {
       top: -35px;
       left: 200px;
       width: 100%; }
-      @media only screen and (max-width: 85.625em) {
+      @media only screen and (max-width: 106.25em) {
         .about-img--1 {
           width: 70%;
           position: initial;
