@@ -439,8 +439,7 @@ h1 {
       font-family: Bringin;
       font-weight: 400;
       font-size: 3.3rem;
-      color: #36aeea;
-      margin-right: 6.5rem; }
+      color: #36aeea; }
       .header-nav__logo span {
         color: #95a5ad; }
       @media only screen and (max-width: 37.5em) {
@@ -450,7 +449,12 @@ h1 {
           font-size: 4.5rem; } }
     .header-nav__links {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 2rem;
+      justify-content: center; }
       .header-nav__links-item {
         color: #9daeb6;
         font-family: open-sans, sans-serif;
@@ -459,9 +463,8 @@ h1 {
         font-size: 1.4rem;
         font-weight: 700;
         text-transform: uppercase;
-        position: relative; }
-        .header-nav__links-item:not(:last-child) {
-          margin-right: 2rem; }
+        position: relative;
+        padding: 1rem; }
         .header-nav__links-item::after {
           content: "";
           position: absolute;
@@ -479,9 +482,7 @@ h1 {
         @media only screen and (max-width: 37.5em) {
           .header-nav__links-item {
             font-size: 4rem;
-            padding: 2rem 0; }
-            .header-nav__links-item:not(:last-child) {
-              margin-right: 0rem; } }
+            padding: 2rem 0; } }
       @media only screen and (max-width: 37.5em) {
         .header-nav__links {
           position: fixed;
@@ -507,11 +508,12 @@ h1 {
     margin-left: 5rem; }
     @media only screen and (max-width: 75em) {
       .header-info {
-        width: 60%;
+        width: 70%;
         margin-top: 0;
         margin-left: 3.5rem;
         padding-top: 10rem;
-        padding-bottom: 10rem; } }
+        padding-bottom: 10rem;
+        margin-left: 0; } }
     @media only screen and (max-width: 37.5em) {
       .header-info {
         width: 85%;
