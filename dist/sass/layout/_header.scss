@@ -30,7 +30,7 @@
       @include Bringin;
       font-size: 3.3rem;
       color: #36aeea;
-      margin-right: 6.5rem;
+      // margin-right: 6.5rem;
 
       & span {
         color: #95a5ad;
@@ -46,6 +46,12 @@
     &__links {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 2rem;
+      justify-content: center;
+
       &-item {
         color: #9daeb6;
         @include sans(bold);
@@ -53,9 +59,7 @@
         font-weight: 700;
         text-transform: uppercase;
         position: relative;
-        &:not(:last-child) {
-          margin-right: 2rem;
-        }
+        padding: 1rem;
 
         &::after {
           content: "";
@@ -79,9 +83,6 @@
         @include response(phone) {
           font-size: 4rem;
           padding: 2rem 0;
-          &:not(:last-child) {
-            margin-right: 0rem;
-          }
         }
       }
 
@@ -116,11 +117,12 @@
     margin-left: 5rem;
 
     @include response(tab-land) {
-      width: 60%;
+      width: 70%;
       margin-top: 0;
       margin-left: 3.5rem;
       padding-top: 10rem;
       padding-bottom: 10rem;
+      margin-left: 0;
     }
 
     @include response(phone) {
