@@ -5,9 +5,9 @@
   padding-right: 1.5rem;
 
   @include response(phone) {
-    background: url(../img/footer-bc-low.png) center bottom
+    background: url(../img/footer-bc-low.png) center 400px
         no-repeat/cover,
-      url(../img/footer-bc-high.png) center bottom no-repeat/cover;
+      url(../img/footer-bc-high.png) center 450px no-repeat/cover;
   }
 
   &-wrapper {
