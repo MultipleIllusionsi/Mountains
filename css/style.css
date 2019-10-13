@@ -1169,12 +1169,12 @@ label.show-menu {
   object-fit: cover; }
 
 .footer {
-  background: url(../img/footer-bc-low.png) bottom no-repeat, url(../img/footer-bc-high.png) center 100% no-repeat;
+  background: url(../img/footer-bc-low.png) center bottom no-repeat, url(../img/footer-bc-high.png) center bottom no-repeat;
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
   @media only screen and (max-width: 37.5em) {
     .footer {
-      background: url(../img/footer-bc-low.png) bottom no-repeat, url(../img/footer-bc-high.png) bottom no-repeat; } }
+      background: url(../img/footer-bc-low.png) center bottom no-repeat/cover, url(../img/footer-bc-high.png) center bottom no-repeat/cover; } }
   .footer-wrapper {
     max-width: 1170px;
     z-index: 100;
