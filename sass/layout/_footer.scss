@@ -5,13 +5,9 @@
   padding-right: 1.5rem;
 
   @include response(phone) {
-    background: url(../img/footer-bc-low.png) center 200% no-repeat,
-      url(../img/footer-bc-high.png) 20% 400% no-repeat;
+    background: url(../img/footer-bc-low.png) bottom no-repeat,
+      url(../img/footer-bc-high.png) bottom no-repeat;
   }
-  // @include response(phone) {
-  //   background: url(../img/footer-bc-low.png) bottom no-repeat,
-  //     url(../img/footer-bc-high.png) 20% 100% no-repeat;
-  // }
 
   &-wrapper {
     max-width: 1170px;
