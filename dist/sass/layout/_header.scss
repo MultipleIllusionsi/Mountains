@@ -30,7 +30,6 @@
       @include Bringin;
       font-size: 3.3rem;
       color: #36aeea;
-      // margin-right: 6.5rem;
 
       & span {
         color: #95a5ad;
@@ -52,6 +51,10 @@
       padding: 0 2rem;
       justify-content: center;
 
+      @include response(tab-land) {
+        padding: 0 1rem;
+      }
+
       &-item {
         color: #9daeb6;
         @include sans(bold);
@@ -61,7 +64,7 @@
         position: relative;
         padding: 1rem;
 
-        &::after {
+        &:not(:last-child)::after {
           content: "";
           position: absolute;
           bottom: -5px;

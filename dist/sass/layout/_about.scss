@@ -1,16 +1,11 @@
 .about {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
   background-color: #f6f4f4;
-  @include response(tab-land) {
-    padding-right: 0;
-    padding-left: 0;
-  }
 
   &-wrapper {
     max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 1.5rem;
     background-image: url(../img/about_bg.png);
     background-position: 130% 15%;
     background-repeat: no-repeat;
@@ -23,14 +18,12 @@
   }
 
   &-info {
-    width: 41.5%;
-    margin-left: 5rem;
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include response(tab-land) {
-      padding-bottom: 10rem;
-      padding-top: 10rem;
     }
 
     @include response(phone) {
@@ -66,44 +59,33 @@
   }
 
   &-img {
-    flex-grow: 1;
-    position: relative;
+    width: 60%;
 
     &--1 {
-      position: absolute;
-      top: -35px;
-      left: 200px;
-      width: 100%;
+      width: 90%;
+      transform: translate(220px, -30px);
 
-      @media only screen and (max-width: 106.25em) {
-        width: 70%;
-        position: initial;
-        margin-left: 30%;
+      @media only screen and (max-width: 93.75em) {
+        transform: translate(0px, -30px);
+        margin-left: 10%;
       }
 
       @include response(tab-land) {
-        width: 80%;
-        position: initial;
-        margin-left: 20%;
       }
 
       @include response(phone) {
-        width: 90%;
-        position: initial;
-        margin-left: 10%;
       }
     }
 
     &--2 {
-      position: absolute;
-      bottom: 25px;
-      left: 110px;
-      width: 45%;
+      width: 40%;
+      transform: translate(150px, -50%);
+
+      @media only screen and (max-width: 93.75em) {
+        transform: translate(0px, -50%);
+      }
 
       @include response(tab-land) {
-        bottom: 0;
-        left: 0;
-        width: 50%;
       }
     }
   }
