@@ -1174,7 +1174,7 @@ label.show-menu {
   padding-right: 1.5rem; }
   @media only screen and (max-width: 37.5em) {
     .footer {
-      background: url(../img/footer-bc-low.png) center 150% no-repeat, url(../img/footer-bc-high.png) 20% 200% no-repeat; } }
+      background: url(../img/footer-bc-low.png) center 200% no-repeat, url(../img/footer-bc-high.png) 20% 400% no-repeat; } }
   .footer-wrapper {
     max-width: 1170px;
     z-index: 100;
