@@ -5,7 +5,6 @@
     max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 1.5rem;
     background-image: url(../img/about_bg.png);
     background-position: 130% 15%;
     background-repeat: no-repeat;
@@ -15,6 +14,10 @@
     @include response(tab-land) {
       background-position: 200% 15%;
     }
+
+    @include response(phone) {
+      flex-direction: column;
+    }
   }
 
   &-info {
@@ -22,14 +25,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 1.5rem;
+    margin: 15rem 0;
 
-    @include response(tab-land) {
+    @include response(tab-port) {
+      margin: 10rem 0;
     }
 
     @include response(phone) {
-      margin: 0;
-      padding: 5rem 1.5rem;
-      width: 100%;
+      width: 50%;
+      margin: 5rem auto;
+      padding-left: 0;
       text-align: center;
     }
 
@@ -38,6 +44,10 @@
 
       @include response(tab-land) {
         width: 85%;
+      }
+
+      @include response(phone) {
+        width: 100%;
       }
     }
 
@@ -60,6 +70,14 @@
 
   &-img {
     width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include response(phone) {
+      width: 50%;
+      flex-direction: row;
+    }
 
     &--1 {
       width: 90%;
@@ -70,22 +88,30 @@
         margin-left: 10%;
       }
 
-      @include response(tab-land) {
-      }
-
       @include response(phone) {
+        width: 100%;
+        margin: 0;
+        transform: none;
+        object-fit: cover;
       }
     }
 
     &--2 {
-      width: 40%;
-      transform: translate(150px, -50%);
+      width: 50%;
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
 
       @media only screen and (max-width: 93.75em) {
-        transform: translate(0px, -50%);
+        bottom: 0;
+        left: 0;
+        width: 45%;
       }
 
-      @include response(tab-land) {
+      @include response(phone) {
+        position: inherit;
+        width: 100%;
+        object-fit: cover;
       }
     }
   }

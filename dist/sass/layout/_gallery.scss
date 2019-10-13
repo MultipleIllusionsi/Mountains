@@ -3,7 +3,6 @@
     max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
-
     & h2 {
       @include waves;
       margin-top: 7rem;
@@ -11,68 +10,68 @@
   }
 
   &-content {
-    margin-top: 7rem;
-    display: flex;
     width: 100%;
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(
+      12,
+      max-content(min-content, max-content)
+    );
+    grid-template-rows: repeat(3, min-content);
+    gap: 30px;
 
-    @include response(phone) {
-      flex-wrap: wrap;
-    }
-    img[class^="gallery-content__item--"] {
-      width: 100%;
-    }
-
-    &__col {
-      &--1 {
-        padding-right: 3rem;
-        @include response(phone) {
-          width: 45%;
-          padding-right: 3rem;
-        }
-      }
-
-      &--2 {
-        padding-right: 3rem;
-        @include response(phone) {
-          width: 55%;
-          padding-right: 0;
-        }
-      }
-
-      &--3 {
-        @include response(phone) {
-          display: flex;
-          width: 50%;
-          margin-top: 3rem;
-        }
-      }
+    @include response(tab-land) {
+      gap: 10px;
     }
 
     &__item {
+      &--1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      &--2 {
+        grid-column-start: 4;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
       &--3 {
-        @include response(phone) {
-          padding-right: 3rem;
-        }
+        grid-column-start: 9;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 3;
       }
 
       &--4 {
-        margin-top: 3rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
       }
 
       &--5 {
-        margin-top: 3rem;
-        @include response(phone) {
-          width: 50%;
-        }
+        grid-column-start: 4;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 4;
       }
 
       &--6 {
-        margin-top: 3rem;
-        @include response(phone) {
-          margin-top: 0;
-          width: 50%;
-        }
+        grid-column-start: 9;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 4;
       }
     }
+  }
+
+  li[class^="gallery-content__item--"] > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

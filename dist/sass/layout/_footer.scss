@@ -5,9 +5,13 @@
   padding-right: 1.5rem;
 
   @include response(phone) {
-    background: url(../img/footer-bc-low.png) bottom no-repeat,
-      url(../img/footer-bc-high.png) 20% 100% no-repeat;
+    background: url(../img/footer-bc-low.png) center 150% no-repeat,
+      url(../img/footer-bc-high.png) 20% 200% no-repeat;
   }
+  // @include response(phone) {
+  //   background: url(../img/footer-bc-low.png) bottom no-repeat,
+  //     url(../img/footer-bc-high.png) 20% 100% no-repeat;
+  // }
 
   &-wrapper {
     max-width: 1170px;
@@ -28,7 +32,6 @@
 
     @include response(phone) {
       flex-direction: column;
-      padding-bottom: 20rem;
     }
 
     &--1 {
@@ -123,7 +126,7 @@
       text-transform: uppercase;
       margin-top: 3rem;
       font-size: 3.6rem;
-      color: #36aeea;
+      color: #3d80a1;
       letter-spacing: 0.36rem;
       z-index: 10;
 
@@ -156,6 +159,7 @@
       margin-left: auto;
       margin-right: auto;
       width: 90%;
+
       & input {
         height: 6rem;
         margin-bottom: 2rem;
