@@ -64,13 +64,23 @@
         position: relative;
         padding: 1rem;
 
-        &:not(:last-child)::after {
+        &:last-child {
+          //close menu btn
+          display: none;
+
+          @include response(phone) {
+            display: block;
+          }
+        }
+
+        &::after {
           content: "";
           position: absolute;
           bottom: -5px;
           left: 0;
           width: 0;
-          height: 0;
+          height: 2px;
+          transition: 0.5s all;
           background-color: #36aeea;
 
           @include response(phone) {

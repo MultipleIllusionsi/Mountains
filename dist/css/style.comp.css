@@ -468,16 +468,22 @@ h1 {
         text-transform: uppercase;
         position: relative;
         padding: 1rem; }
-        .header-nav__links-item:not(:last-child)::after {
+        .header-nav__links-item:last-child {
+          display: none; }
+          @media only screen and (max-width: 37.5em) {
+            .header-nav__links-item:last-child {
+              display: block; } }
+        .header-nav__links-item::after {
           content: "";
           position: absolute;
           bottom: -5px;
           left: 0;
           width: 0;
-          height: 0;
+          height: 2px;
+          transition: 0.5s all;
           background-color: #36aeea; }
           @media only screen and (max-width: 37.5em) {
-            .header-nav__links-item:not(:last-child)::after {
+            .header-nav__links-item::after {
               content: none; } }
         .header-nav__links-item:hover::after {
           width: 100%;
