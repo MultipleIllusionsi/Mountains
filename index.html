@@ -1,536 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- styles -->
-    <link
-      rel="stylesheet"
-      href="https://use.typekit.net/uza5sfu.css"
-    />
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
-    <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Mountains</title>
-  </head>
-  <body>
-    <div class="container">
-      <!-- header -->
-      <header class="section header">
-        <div class="header-wrapper">
-          <nav class="header-nav">
-            <div class="header-nav__logo">Moun<span>tains</span></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- styles -->
+  <link rel="stylesheet" href="https://use.typekit.net/uza5sfu.css" />
+  <link rel="stylesheet" href="./fonts/stylesheet.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 
-            <input type="checkbox" id="menu" />
-            <label
-              aria-labelledby="menu"
-              for="menu"
-              class="show-menu"
-            >
-              <img
-                src="./img/show-menu-btn.svg"
-                class="show-menu-btn"
-                alt="show-menu-btn"
-              />
-            </label>
+  <title>Mountains</title>
+</head>
 
-            <ul class="header-nav__links">
-              <li class="header-nav__links-item">
-                <a href="#">Our story</a>
+<body>
+  <div class="container">
+    <!-- header -->
+    <header class="section header">
+      <div class="header-wrapper">
+        <nav class="header-nav">
+          <div class="header-nav__logo">Moun<span>tains</span></div>
+
+          <input type="checkbox" id="menu" />
+          <label aria-labelledby="menu" for="menu" class="show-menu">
+            <img src="./img/show-menu-btn.svg" class="show-menu-btn" alt="show-menu-btn" />
+          </label>
+
+          <ul class="header-nav__links">
+            <li class="header-nav__links-item">
+              <a href="#">Our story</a>
+            </li>
+            <li class="header-nav__links-item">
+              <a href="#">Services</a>
+            </li>
+            <li class="header-nav__links-item">
+              <a href="#">Work</a>
+            </li>
+            <li class="header-nav__links-item">
+              <a href="#">Journal</a>
+            </li>
+            <li class="header-nav__links-item">
+              <a href="#">Contact</a>
+            </li>
+
+            <li class="header-nav__links-item">
+              <label aria-label="hide-menu" for="menu" class="header-nav__links-item">
+                <img src="./img/hide-menu-btn.svg" class="hide-menu-btn" alt="hide-menu-btn" />
+              </label>
+            </li>
+          </ul>
+          <button class="header-nav__btn btn-outline">
+            Call us
+          </button>
+        </nav>
+
+        <div class="header-info">
+          <h1 class="heading-primary">
+            Travel with us
+            <span>to the Mountains</span>
+          </h1>
+          <p class="text-tertiary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ea, excepturi!
+          </p>
+          <button class="btn">Order now</button>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section class="section about">
+      <div class="about-wrapper">
+        <div class="about-info">
+          <h3 class="heading-tertiary">
+            About us
+          </h3>
+          <p class="text-tertiary">
+            Aliquam sed posuere urna, et gravida nisl. Praesent
+            interdum nisl libero, pretium egestas purus eleifend
+            vitae. Mauris suscipit vel lectus at luctus.
+          </p>
+          <button class="btn">Read more</button>
+        </div>
+
+        <div class="about-img">
+          <img class="about-img--1" src="./img/about-1.jpg" alt="about1" />
+          <img class="about-img--2" src="./img/about-2.jpg" alt="about2" />
+        </div>
+      </div>
+    </section>
+    <!-- journal -->
+    <section class="section journal">
+      <div class="journal-wrapper">
+        <h2 class="heading-secondary">Our journal</h2>
+
+        <ul class="journal-content">
+          <li class="journal-content__item--1">
+            <img src="./img/journal-1.png" alt="journal-1" />
+          </li>
+
+          <li class="journal-content__item--2">
+            <h5 class="heading-5">Love</h5>
+            <h4 class="heading-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do
+            </h4>
+            <p class="text-tertiary">
+              You know how to make best coffee in the universe? Or,
+              maybe you’re very good in designing gloves? Tell
+              everyone about your experience and skills.
+            </p>
+            <span class="pagination">03</span>
+          </li>
+
+          <li class="journal-content__item--3">
+            <img src="./img/journal-3.png" alt="journal-3" />
+          </li>
+
+          <li class="journal-content__item--4">
+            <h5 class="heading-5">Tree</h5>
+            <h4 class="heading-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit,
+            </h4>
+            <p class="text-tertiary">
+              The way to a successful brand is hard, but always very
+              interesting. Share the full story of your project –
+              from the very first day until now.
+            </p>
+            <span class="pagination">02</span>
+          </li>
+
+          <li class="journal-content__item--5">
+            <img src="./img/journal-5.png" alt="journal-5" />
+          </li>
+
+          <li class="journal-content__item--6">
+            <h5 class="heading-5">Water</h5>
+            <h4 class="heading-4">
+              LITTLE PIECES OF OUR PROUDNESS
+            </h4>
+            <p class="text-tertiary">
+              What do you do better than your competitors? What are
+              you proud of? What details and advantages of your
+              product you want people to know about?
+            </p>
+            <span class="pagination">03</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- offer -->
+    <section class="section offer">
+      <div class="offer-wrapper">
+        <div class="offer-content">
+          <h3 class="heading-tertiary">
+            Do you wanna go?
+          </h3>
+
+          <p class="offer-content__text text-tertiary">
+            Aliquam sed posuere urna, et gravida nisl. Praesent
+            interdum nisl libero, pretium egestas purus eleifend
+            vitae. Mauris suscipit vel lectus at luctus.
+          </p>
+
+          <form action="#" class="offer-content__form">
+            <input type="text" class="offer-content__form-input--1" placeholder="Your name:" />
+            <input type="text" class="offer-content__form-input--2" placeholder="Your phone:" />
+            <button type="submit" class="btn">Order now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- scheme -->
+    <section class="section scheme">
+      <div class="scheme-wrapper">
+        <h2 class="heading-secondary">How we work</h2>
+
+        <ul class="scheme-content">
+          <li class="scheme-content__item">
+            <figure>
+              <div class="scheme-content__item-number">1</div>
+              <div class="scheme-content__item-img">
+                <img src="./img/scheme-1.svg" alt="1" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt
+              </figcaption>
+            </figure>
+          </li>
+          <li class="scheme-content__item">
+            <figure>
+              <div class="scheme-content__item-number">2</div>
+              <div class="scheme-content__item-img">
+                <img src="./img/scheme-2.svg" alt="2" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt
+              </figcaption>
+            </figure>
+          </li>
+          <li class="scheme-content__item">
+            <figure>
+              <div class="scheme-content__item-number">3</div>
+              <div class="scheme-content__item-img">
+                <img src="./img/scheme-3.svg" alt="3" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt
+              </figcaption>
+            </figure>
+          </li>
+          <li class="scheme-content__item">
+            <figure>
+              <div class="scheme-content__item-number">4</div>
+              <div class="scheme-content__item-img">
+                <img src="./img/scheme-4.svg" alt="4" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- travel -->
+    <section class="section travel">
+      <div class="travel-wrapper">
+        <h2 class="heading-secondary">Travel with us</h2>
+
+        <ul class="travel-list">
+          <li class="travel-list__item travel-list__item--1">
+            <div class="travel-list__item-wrapper">
+              <div class="travel-list__item-stars">
+                <img src="./img/star-full.svg" alt="star" /><img src="./img/star-full.svg" alt="star" /><img
+                  src="./img/star-full.svg" alt="star" /><img src="./img/star-full.svg" alt="star" />
+              </div>
+              <div class="travel-list__item-text">
+                <h4>Carpathian</h4>
+                <p>Lorem ipsum dolor si amet, consectetur</p>
+              </div>
+              <div class="travel-list__item-price">
+                <div>3150&#36;</div>
+                <div>&#36;793</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="travel-list__item travel-list__item--2">
+            <div class="travel-list__item-wrapper">
+              <div class="travel-list__item-stars">
+                <img src="./img/star-full.svg" alt="star" /><img src="./img/star-full.svg" alt="star" /><img
+                  src="./img/star-full.svg" alt="star" /><img src="./img/star-full.svg" alt="star" /><img
+                  src="./img/star-full.svg" alt="star" />
+              </div>
+              <div class="travel-list__item-text">
+                <h4>Alps</h4>
+                <p>Lorem ipsum dolor si amet, consectetur</p>
+              </div>
+              <div class="travel-list__item-price">
+                <div>3150&#36;</div>
+                <div>&#36;1893</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="travel-list__item travel-list__item--3">
+            <div class="travel-list__item-wrapper">
+              <div class="travel-list__item-stars">
+                <img src="./img/star-full.svg" alt="star" /><img src="./img/star-full.svg" alt="star" /><img
+                  src="./img/star-full.svg" alt="star" /><img src="./img/star-full.svg" alt="star" /><img
+                  src="./img/star-full.svg" alt="star" />
+              </div>
+              <div class="travel-list__item-text">
+                <h4>Pyrenees</h4>
+                <p>Lorem ipsum dolor si amet, consectetur</p>
+              </div>
+              <div class="travel-list__item-price">
+                <div>3150&#36;</div>
+                <div>&#36;2593</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="travel-list__item travel-list__item--4">
+            <div class="travel-list__item-wrapper">
+              <div class="travel-list__item-stars">
+                <img src="./img/star-full.svg" alt="star" /><img src="./img/star-full.svg" alt="star" /><img
+                  src="./img/star-full.svg" alt="star" /><img src="./img/star-full.svg" alt="star" /><img
+                  src="./img/star-full.svg" alt="star" />
+              </div>
+              <div class="travel-list__item-text">
+                <h4>Rocky</h4>
+                <p>Lorem ipsum dolor si amet, consectetur</p>
+              </div>
+              <div class="travel-list__item-price">
+                <div>3150&#36;</div>
+                <div>&#36;2123</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="travel-list__item travel-list__item--5">
+            <div class="travel-list__item-wrapper">
+              <div class="travel-list__item-stars">
+                <img src="./img/star-full.svg" alt="star" /><img src="./img/star-full.svg" alt="star" /><img
+                  src="./img/star-full.svg" alt="star" />
+              </div>
+              <div class="travel-list__item-text">
+                <h4>Kavkaz</h4>
+                <p>Lorem ipsum dolor si amet, consectetur</p>
+              </div>
+              <div class="travel-list__item-price">
+                <div>3150&#36;</div>
+                <div>&#36;593</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- gallery -->
+    <section class="section gallery">
+      <div class="gallery-wrapper">
+        <h2 class="heading-secondary">Gallery</h2>
+
+        <ul class="gallery-content">
+          <li class="gallery-content__item--1">
+            <img src="./img/gallery-1.png" alt="gallery-1" />
+          </li>
+          <li class="gallery-content__item--2">
+            <img src="./img/gallery-2.png" alt="gallery-2" />
+          </li>
+          <li class="gallery-content__item--3">
+            <img src="./img/gallery-3.png" alt="gallery-3" />
+          </li>
+          <li class="gallery-content__item--4">
+            <img src="./img/gallery-4.png" alt="gallery-4" />
+          </li>
+          <li class="gallery-content__item--5">
+            <img src="./img/gallery-5.png" alt="gallery-5" />
+          </li>
+          <li class="gallery-content__item--6">
+            <img src="./img/gallery-6.png" alt="gallery-6" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section footer">
+      <div class="footer-wrapper">
+        <!-- articles -->
+        <h2 class="heading-secondary">Our clients say</h2>
+
+        <div class="footer-article">
+          <article class="footer-article--1">
+            <p class="footer-article__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse
+            </p>
+
+            <figure>
+              <img src="./img/article-photo-1.png" alt="author" class="footer-article__img" />
+              <figcaption class="footer-article__author">
+                Pavliv Yaroslav <span>Web designer</span>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="footer-article--2">
+            <p class="footer-article__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse
+            </p>
+
+            <figure>
+              <img src="./img/article-photo-2.png" alt="author" class="footer-article__img" />
+              <figcaption class="footer-article__author">
+                John Scott <span>The Fringe</span>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+        <!-- contacts -->
+        <div class="footer-contacts">
+          <h2 class="footer-contacts__heading">Contacts</h2>
+          <p class="footer-contacts__text">
+            Sign up for our newsletter to receive updates
+          </p>
+          <form action="#" class="footer-contacts__form">
+            <input type="text" class="footer-contacts__form-input" placeholder="Name" />
+            <input type="text" class="footer-contacts__form-input" placeholder="Phone" />
+            <input type="text" class="footer-contacts__form-input" placeholder="E-mail" />
+            <button class="btn footer-contacts__form-btn">
+              Send
+            </button>
+          </form>
+        </div>
+        <!-- social -->
+        <ul class="footer-social">
+          <li class="footer-social__item">
+            All rights reserved 2015
+          </li>
+          <li class="footer-social__item">
+            <ul class="footer-social__item-sublist">
+              <li>
+                <img src="./img/twitter-logo.svg" alt="twitter" />
               </li>
-              <li class="header-nav__links-item">
-                <a href="#">Services</a>
+              <li>
+                <img src="./img/facebook-logo.svg" alt="facebook" />
               </li>
-              <li class="header-nav__links-item">
-                <a href="#">Work</a>
-              </li>
-              <li class="header-nav__links-item">
-                <a href="#">Journal</a>
-              </li>
-              <li class="header-nav__links-item">
-                <a href="#">Contact</a>
-              </li>
-              <li class="header-nav__links-item">
-                <a href="#">Work</a>
-              </li>
-              <li class="header-nav__links-item">
-                <a href="#">Journal</a>
-              </li>
-              <li class="header-nav__links-item">
-                <label for="menu" class="header-nav__links-item">
-                  <img
-                    src="./img/hide-menu-btn.svg"
-                    class="hide-menu-btn"
-                    alt="hide-menu-btn"
-                  />
-                </label>
+              <li>
+                <img src="./img/vk-logo.svg" alt="vk" />
               </li>
             </ul>
-            <button class="header-nav__btn btn-outline">
-              Call us
-            </button>
-          </nav>
+          </li>
+          <li class="footer-social__item">1 234 243 123</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
 
-          <div class="header-info">
-            <h1 class="heading-primary">
-              Travel with us
-              <span>to the Mountains</span>
-            </h1>
-            <p class="text-tertiary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ea, excepturi!
-            </p>
-            <button class="btn">Order now</button>
-          </div>
-        </div>
-      </header>
-      <!-- about -->
-      <section class="section about">
-        <div class="about-wrapper">
-          <div class="about-info">
-            <h3 class="heading-tertiary">
-              About us
-            </h3>
-            <p class="text-tertiary">
-              Aliquam sed posuere urna, et gravida nisl. Praesent
-              interdum nisl libero, pretium egestas purus eleifend
-              vitae. Mauris suscipit vel lectus at luctus.
-            </p>
-            <button class="btn">Read more</button>
-          </div>
-
-          <div class="about-img">
-            <img
-              class="about-img--1"
-              src="./img/about-1.jpg"
-              alt="about1"
-            />
-            <img
-              class="about-img--2"
-              src="./img/about-2.jpg"
-              alt="about2"
-            />
-          </div>
-        </div>
-      </section>
-      <!-- journal -->
-      <section class="section journal">
-        <div class="journal-wrapper">
-          <h2 class="heading-secondary">Our journal</h2>
-
-          <ul class="journal-content">
-            <li class="journal-content__item--1">
-              <img src="./img/journal-1.png" alt="journal-1" />
-            </li>
-
-            <li class="journal-content__item--2">
-              <h5 class="heading-5">Love</h5>
-              <h4 class="heading-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do
-              </h4>
-              <p class="text-tertiary">
-                You know how to make best coffee in the universe? Or,
-                maybe you’re very good in designing gloves? Tell
-                everyone about your experience and skills.
-              </p>
-              <span class="pagination">03</span>
-            </li>
-
-            <li class="journal-content__item--3">
-              <img src="./img/journal-3.png" alt="journal-3" />
-            </li>
-
-            <li class="journal-content__item--4">
-              <h5 class="heading-5">Tree</h5>
-              <h4 class="heading-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit,
-              </h4>
-              <p class="text-tertiary">
-                The way to a successful brand is hard, but always very
-                interesting. Share the full story of your project –
-                from the very first day until now.
-              </p>
-              <span class="pagination">02</span>
-            </li>
-
-            <li class="journal-content__item--5">
-              <img src="./img/journal-5.png" alt="journal-5" />
-            </li>
-
-            <li class="journal-content__item--6">
-              <h5 class="heading-5">Water</h5>
-              <h4 class="heading-4">
-                LITTLE PIECES OF OUR PROUDNESS
-              </h4>
-              <p class="text-tertiary">
-                What do you do better than your competitors? What are
-                you proud of? What details and advantages of your
-                product you want people to know about?
-              </p>
-              <span class="pagination">03</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- offer -->
-      <section class="section offer">
-        <div class="offer-wrapper">
-          <div class="offer-content">
-            <h3 class="heading-tertiary">
-              Do you wanna go?
-            </h3>
-
-            <p class="offer-content__text text-tertiary">
-              Aliquam sed posuere urna, et gravida nisl. Praesent
-              interdum nisl libero, pretium egestas purus eleifend
-              vitae. Mauris suscipit vel lectus at luctus.
-            </p>
-
-            <form action="#" class="offer-content__form">
-              <input
-                type="text"
-                class="offer-content__form-input--1"
-                placeholder="Your name:"
-              />
-              <input
-                type="text"
-                class="offer-content__form-input--2"
-                placeholder="Your phone:"
-              />
-              <button type="submit" class="btn">Order now</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!-- scheme -->
-      <section class="section scheme">
-        <div class="scheme-wrapper">
-          <h2 class="heading-secondary">How we work</h2>
-
-          <ul class="scheme-content">
-            <li class="scheme-content__item">
-              <figure>
-                <div class="scheme-content__item-number">1</div>
-                <div class="scheme-content__item-img">
-                  <img src="./img/scheme-1.svg" alt="1" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor incididunt
-                </figcaption>
-              </figure>
-            </li>
-            <li class="scheme-content__item">
-              <figure>
-                <div class="scheme-content__item-number">2</div>
-                <div class="scheme-content__item-img">
-                  <img src="./img/scheme-2.svg" alt="2" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor incididunt
-                </figcaption>
-              </figure>
-            </li>
-            <li class="scheme-content__item">
-              <figure>
-                <div class="scheme-content__item-number">3</div>
-                <div class="scheme-content__item-img">
-                  <img src="./img/scheme-3.svg" alt="3" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor incididunt
-                </figcaption>
-              </figure>
-            </li>
-            <li class="scheme-content__item">
-              <figure>
-                <div class="scheme-content__item-number">4</div>
-                <div class="scheme-content__item-img">
-                  <img src="./img/scheme-4.svg" alt="4" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor incididunt
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- travel -->
-      <section class="section travel">
-        <div class="travel-wrapper">
-          <h2 class="heading-secondary">Travel with us</h2>
-
-          <ul class="travel-list">
-            <li class="travel-list__item travel-list__item--1">
-              <div class="travel-list__item-wrapper">
-                <div class="travel-list__item-stars">
-                  <img src="./img/star-full.svg" alt="star" /><img
-                    src="./img/star-full.svg"
-                    alt="star"
-                  /><img src="./img/star-full.svg" alt="star" /><img
-                    src="./img/star-full.svg"
-                    alt="star"
-                  />
-                </div>
-                <div class="travel-list__item-text">
-                  <h4>Carpathian</h4>
-                  <p>Lorem ipsum dolor si amet, consectetur</p>
-                </div>
-                <div class="travel-list__item-price">
-                  <div>3150&#36;</div>
-                  <div>&#36;793</div>
-                </div>
-              </div>
-            </li>
-
-            <li class="travel-list__item travel-list__item--2">
-              <div class="travel-list__item-wrapper">
-                <div class="travel-list__item-stars">
-                  <img src="./img/star-full.svg" alt="star" /><img
-                    src="./img/star-full.svg"
-                    alt="star"
-                  /><img src="./img/star-full.svg" alt="star" /><img
-                    src="./img/star-full.svg"
-                    alt="star"
-                  /><img src="./img/star-full.svg" alt="star" />
-                </div>
-                <div class="travel-list__item-text">
-                  <h4>Alps</h4>
-                  <p>Lorem ipsum dolor si amet, consectetur</p>
-                </div>
-                <div class="travel-list__item-price">
-                  <div>3150&#36;</div>
-                  <div>&#36;1893</div>
-                </div>
-              </div>
-            </li>
-
-            <li class="travel-list__item travel-list__item--3">
-              <div class="travel-list__item-wrapper">
-                <div class="travel-list__item-stars">
-                  <img src="./img/star-full.svg" alt="star" /><img
-                    src="./img/star-full.svg"
-                    alt="star"
-                  /><img src="./img/star-full.svg" alt="star" /><img
-                    src="./img/star-full.svg"
-                    alt="star"
-                  /><img src="./img/star-full.svg" alt="star" />
-                </div>
-                <div class="travel-list__item-text">
-                  <h4>Pyrenees</h4>
-                  <p>Lorem ipsum dolor si amet, consectetur</p>
-                </div>
-                <div class="travel-list__item-price">
-                  <div>3150&#36;</div>
-                  <div>&#36;2593</div>
-                </div>
-              </div>
-            </li>
-
-            <li class="travel-list__item travel-list__item--4">
-              <div class="travel-list__item-wrapper">
-                <div class="travel-list__item-stars">
-                  <img src="./img/star-full.svg" alt="star" /><img
-                    src="./img/star-full.svg"
-                    alt="star"
-                  /><img src="./img/star-full.svg" alt="star" /><img
-                    src="./img/star-full.svg"
-                    alt="star"
-                  /><img src="./img/star-full.svg" alt="star" />
-                </div>
-                <div class="travel-list__item-text">
-                  <h4>Rocky</h4>
-                  <p>Lorem ipsum dolor si amet, consectetur</p>
-                </div>
-                <div class="travel-list__item-price">
-                  <div>3150&#36;</div>
-                  <div>&#36;2123</div>
-                </div>
-              </div>
-            </li>
-
-            <li class="travel-list__item travel-list__item--5">
-              <div class="travel-list__item-wrapper">
-                <div class="travel-list__item-stars">
-                  <img src="./img/star-full.svg" alt="star" /><img
-                    src="./img/star-full.svg"
-                    alt="star"
-                  /><img src="./img/star-full.svg" alt="star" />
-                </div>
-                <div class="travel-list__item-text">
-                  <h4>Kavkaz</h4>
-                  <p>Lorem ipsum dolor si amet, consectetur</p>
-                </div>
-                <div class="travel-list__item-price">
-                  <div>3150&#36;</div>
-                  <div>&#36;593</div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- gallery -->
-      <section class="section gallery">
-        <div class="gallery-wrapper">
-          <h2 class="heading-secondary">Gallery</h2>
-
-          <div class="gallery-content">
-            <li class="gallery-content__item--1">
-              <img src="./img/gallery-1.png" alt="gallery-1" />
-            </li>
-            <li class="gallery-content__item--2">
-              <img src="./img/gallery-2.png" alt="gallery-2" />
-            </li>
-            <li class="gallery-content__item--3">
-              <img src="./img/gallery-3.png" alt="gallery-3" />
-            </li>
-            <li class="gallery-content__item--4">
-              <img src="./img/gallery-4.png" alt="gallery-4" />
-            </li>
-            <li class="gallery-content__item--5">
-              <img src="./img/gallery-5.png" alt="gallery-5" />
-            </li>
-            <li class="gallery-content__item--6">
-              <img src="./img/gallery-6.png" alt="gallery-6" />
-            </li>
-          </div>
-        </div>
-      </section>
-      <!-- footer -->
-      <footer class="section footer">
-        <div class="footer-wrapper">
-          <!-- articles -->
-          <h2 class="heading-secondary">Our clients say</h2>
-
-          <div class="footer-article">
-            <article class="footer-article--1">
-              <p class="footer-article__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse
-              </p>
-
-              <figure>
-                <img
-                  src="./img/article-photo-1.png"
-                  alt="author"
-                  class="footer-article__img"
-                />
-                <figcaption class="footer-article__author">
-                  Pavliv Yaroslav <span>Web designer</span>
-                </figcaption>
-              </figure>
-            </article>
-
-            <article class="footer-article--2">
-              <p class="footer-article__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse
-              </p>
-
-              <figure>
-                <img
-                  src="./img/article-photo-2.png"
-                  alt="author"
-                  class="footer-article__img"
-                />
-                <figcaption class="footer-article__author">
-                  John Scott <span>The Fringe</span>
-                </figcaption>
-              </figure>
-            </article>
-          </div>
-          <!-- contacts -->
-          <div class="footer-contacts">
-            <h2 class="footer-contacts__heading">Contacts</h2>
-            <p class="footer-contacts__text">
-              Sign up for our newsletter to receive updates
-            </p>
-            <form action="#" class="footer-contacts__form">
-              <input
-                type="text"
-                class="footer-contacts__form-input"
-                placeholder="Name"
-              />
-              <input
-                type="text"
-                class="footer-contacts__form-input"
-                placeholder="Phone"
-              />
-              <input
-                type="text"
-                class="footer-contacts__form-input"
-                placeholder="E-mail"
-              />
-              <button class="btn footer-contacts__form-btn">
-                Send
-              </button>
-            </form>
-          </div>
-          <!-- social -->
-          <ul class="footer-social">
-            <li class="footer-social__item">
-              All rights reserved 2015
-            </li>
-            <li class="footer-social__item">
-              <ul class="footer-social__item-sublist">
-                <li>
-                  <img src="./img/twitter-logo.svg" alt="twitter" />
-                </li>
-                <li>
-                  <img src="./img/facebook-logo.svg" alt="facebook" />
-                </li>
-                <li>
-                  <img src="./img/vk-logo.svg" alt="vk" />
-                </li>
-              </ul>
-            </li>
-            <li class="footer-social__item">1 234 243 123</li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-  </body>
 </html>
