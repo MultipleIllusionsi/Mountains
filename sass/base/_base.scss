@@ -31,7 +31,8 @@ body {
 
 .container {
   min-width: 320px;
-  & > * {
+
+  &>* {
     position: relative;
     background-color: #fff;
   }
@@ -49,4 +50,14 @@ a {
 h1 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: all 3s;
 }

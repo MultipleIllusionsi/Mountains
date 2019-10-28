@@ -1,13 +1,23 @@
 .footer {
-  background: url(../img/footer-bc-low.png) center bottom no-repeat,
-    url(../img/footer-bc-high.png) center bottom no-repeat;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  &.lazyloaded {
+    background-image: url(../img/footer-bc-low.png),
+      url(../img/footer-bc-high.png);
+  }
 
   @include response(phone) {
-    background: url(../img/footer-bc-low.png) center 300px
-        no-repeat/cover,
-      url(../img/footer-bc-high.png) center 300px no-repeat/cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 300px;
+
+    &.lazyloaded {
+      background-image: url(../img/footer-bc-low.png),
+        url(../img/footer-bc-high.png);
+    }
   }
 
   &-wrapper {
@@ -16,6 +26,7 @@
     margin-right: auto;
     margin-left: auto;
     position: relative;
+
     & h2.heading-secondary {
       @include waves;
       margin-top: 7rem;
@@ -33,6 +44,7 @@
 
     &--1 {
       width: 48%;
+
       @include response(phone) {
         margin-left: auto;
         margin-right: auto;
@@ -42,6 +54,7 @@
 
     &--2 {
       width: 48%;
+
       @include response(phone) {
         margin-left: auto;
         margin-right: auto;
@@ -50,10 +63,11 @@
       }
     }
 
-    & > * {
+    &>* {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       & figure {
         display: flex;
         align-items: center;
@@ -113,6 +127,7 @@
     @include response(tab-land) {
       margin-top: 30rem;
     }
+
     @include response(phone) {
       width: 70%;
       margin-top: 50rem;
@@ -217,11 +232,13 @@
       &-sublist {
         display: flex;
         align-items: center;
-        & > * {
+
+        &>* {
           &:not(:last-of-type) {
             margin-right: 1rem;
           }
-          & > * {
+
+          &>* {
             height: 4rem;
             width: 4rem;
             cursor: pointer;

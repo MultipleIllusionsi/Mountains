@@ -14,9 +14,13 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- styles -->
+  <link rel="preload" href="./img/header-img.jpg" as="image">
+
   <link rel="stylesheet" href="https://use.typekit.net/uza5sfu.css" />
   <link rel="stylesheet" href="./fonts/stylesheet.css" />
   <link rel="stylesheet" href="./css/style.css" />
+
+  <script src="lazysizes.min.js" async></script>
 
   <title>Mountains</title>
 </head>
@@ -360,7 +364,7 @@
       </div>
     </section>
     <!-- footer -->
-    <footer class="section footer">
+    <footer class="section footer lazyload">
       <div class="footer-wrapper">
         <!-- articles -->
         <h2 class="heading-secondary">Our clients say</h2>
@@ -407,10 +411,10 @@
             Sign up for our newsletter to receive updates
           </p>
           <form action="#" class="footer-contacts__form">
-            <input type="text" class="footer-contacts__form-input" placeholder="Name" />
-            <input type="text" class="footer-contacts__form-input" placeholder="Phone" />
-            <input type="text" class="footer-contacts__form-input" placeholder="E-mail" />
-            <button class="btn footer-contacts__form-btn">
+            <input name="name" type="text" class="footer-contacts__form-input" placeholder="Name" />
+            <input name="phone" type="tel" class="footer-contacts__form-input" placeholder="Phone" />
+            <input name="email" type="email" class="footer-contacts__form-input" placeholder="E-mail" />
+            <button class="btn footer-contacts__form-btn" type="submit">
               Send
             </button>
           </form>

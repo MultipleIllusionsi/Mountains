@@ -345,6 +345,14 @@ h1 {
   margin-top: 0;
   margin-bottom: 0; }
 
+.lazyload,
+.lazyloading {
+  opacity: 0; }
+
+.lazyloaded {
+  opacity: 1;
+  transition: all 3s; }
+
 .heading-secondary {
   color: #2c2e37;
   font-family: open-sans, sans-serif;
@@ -1175,12 +1183,19 @@ label.show-menu {
   object-fit: cover; }
 
 .footer {
-  background: url(../img/footer-bc-low.png) center bottom no-repeat, url(../img/footer-bc-high.png) center bottom no-repeat;
   padding-left: 1.5rem;
-  padding-right: 1.5rem; }
+  padding-right: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+  .footer.lazyloaded {
+    background-image: url(../img/footer-bc-low.png), url(../img/footer-bc-high.png); }
   @media only screen and (max-width: 37.5em) {
     .footer {
-      background: url(../img/footer-bc-low.png) center 300px no-repeat/cover, url(../img/footer-bc-high.png) center 300px no-repeat/cover; } }
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center 300px; }
+      .footer.lazyloaded {
+        background-image: url(../img/footer-bc-low.png), url(../img/footer-bc-high.png); } }
   .footer-wrapper {
     max-width: 1170px;
     z-index: 100;
