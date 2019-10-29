@@ -1012,10 +1012,14 @@ label.show-menu {
   margin-top: 10rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  background: url(../img/travel-bc-dot.png) 40% 20% no-repeat, url(../img/travel-bc-img.jpg) bottom no-repeat; }
+  background: url(../img/travel-bc-dot.png) 40% 20% no-repeat; }
+  .travel.lazyloaded {
+    background: url(../img/travel-bc-dot.png) 40% 20% no-repeat, url(../img/travel-bc-img.jpg) bottom no-repeat; }
   @media only screen and (max-width: 37.5em) {
     .travel {
-      background: url(../img/travel-bc-dot.png) 40% 20% no-repeat/cover, url(../img/travel-bc-img.jpg) bottom no-repeat/cover; } }
+      background: url(../img/travel-bc-dot.png) 40% 20% no-repeat/cover; }
+      .travel.lazyloaded {
+        background: url(../img/travel-bc-dot.png) 40% 20% no-repeat/cover, url(../img/travel-bc-img.jpg) bottom no-repeat/cover; } }
   .travel-wrapper {
     max-width: 1170px;
     margin-right: auto;
