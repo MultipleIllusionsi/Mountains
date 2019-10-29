@@ -1115,15 +1115,15 @@ label.show-menu {
             .travel-list__item-price div:last-of-type {
               font-size: 2.2rem; } }
       .travel-list__item--1 {
-        background-image: url(../img/travel-card-1.png); }
+        background-image: url(../img/travel-card-1.jpg); }
       .travel-list__item--2 {
-        background-image: url(../img/travel-card-2.png); }
+        background-image: url(../img/travel-card-2.jpg); }
       .travel-list__item--3 {
-        background-image: url(../img/travel-card-3.png); }
+        background-image: url(../img/travel-card-3.jpg); }
       .travel-list__item--4 {
-        background-image: url(../img/travel-card-4.png); }
+        background-image: url(../img/travel-card-4.jpg); }
       .travel-list__item--5 {
-        background-image: url(../img/travel-card-5.png); }
+        background-image: url(../img/travel-card-5.jpg); }
 
 .gallery-wrapper {
   max-width: 1170px;
@@ -1188,14 +1188,14 @@ label.show-menu {
   background-repeat: no-repeat;
   background-position: center bottom; }
   .footer.lazyloaded {
-    background-image: url(../img/footer-bc-low.png), url(../img/footer-bc-high.png); }
+    background-image: url(../img/footer-bc-low.png), url(../img/footer-bc-high.jpg); }
   @media only screen and (max-width: 37.5em) {
     .footer {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center 300px; }
       .footer.lazyloaded {
-        background-image: url(../img/footer-bc-low.png), url(../img/footer-bc-high.png); } }
+        background-image: url(../img/footer-bc-low.png), url(../img/footer-bc-high.jpg); } }
   .footer-wrapper {
     max-width: 1170px;
     z-index: 100;
@@ -1273,7 +1273,7 @@ label.show-menu {
           font-size: 2.4rem; } }
   .footer-contacts {
     margin-top: 17rem;
-    background: url(../img/footer-bc-form.png) no-repeat;
+    background: url(../img/footer-bc-form.jpg) no-repeat;
     box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.75);
     border-radius: 0.8rem;
     display: flex;

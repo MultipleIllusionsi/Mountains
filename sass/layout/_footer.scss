@@ -6,7 +6,7 @@
 
   &.lazyloaded {
     background-image: url(../img/footer-bc-low.png),
-      url(../img/footer-bc-high.png);
+      url(../img/footer-bc-high.jpg);
   }
 
   @include response(phone) {
@@ -16,7 +16,7 @@
 
     &.lazyloaded {
       background-image: url(../img/footer-bc-low.png),
-        url(../img/footer-bc-high.png);
+        url(../img/footer-bc-high.jpg);
     }
   }
 
@@ -113,7 +113,7 @@
 
   &-contacts {
     margin-top: 17rem;
-    background: url(../img/footer-bc-form.png) no-repeat;
+    background: url(../img/footer-bc-form.jpg) no-repeat;
     box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.75);
     border-radius: 0.8rem;
     display: flex;
