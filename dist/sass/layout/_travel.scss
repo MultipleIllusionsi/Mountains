@@ -49,7 +49,7 @@
         margin-top: 5rem;
       }
 
-      & > div {
+      &>div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -65,8 +65,10 @@
 
       &-stars {
         margin-top: 1rem;
+
         & img {
           width: 10%;
+
           &:not(:last-child) {
             margin-right: 0.5rem;
           }
@@ -134,23 +136,23 @@
       }
 
       &--1 {
-        background-image: url(../img/travel-card-1.png);
+        background-image: url(../img/travel-card-1.jpg);
       }
 
       &--2 {
-        background-image: url(../img/travel-card-2.png);
+        background-image: url(../img/travel-card-2.jpg);
       }
 
       &--3 {
-        background-image: url(../img/travel-card-3.png);
+        background-image: url(../img/travel-card-3.jpg);
       }
 
       &--4 {
-        background-image: url(../img/travel-card-4.png);
+        background-image: url(../img/travel-card-4.jpg);
       }
 
       &--5 {
-        background-image: url(../img/travel-card-5.png);
+        background-image: url(../img/travel-card-5.jpg);
       }
     }
   }

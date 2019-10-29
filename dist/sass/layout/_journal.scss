@@ -18,7 +18,7 @@
     text-align: center;
     box-shadow: 0 0px 2rem lightgray;
 
-    & > * {
+    &>* {
       width: calc(100% / 3);
       display: flex;
       flex-direction: column;
@@ -28,7 +28,7 @@
         width: calc(100% / 2);
       }
 
-      & > img {
+      &>img {
         // for each img inside the list
         object-fit: cover;
       }
@@ -37,22 +37,22 @@
     &__item {
       &--1 {
         position: relative;
+
         &::after {
           content: url(../img/journal-1-logo.png);
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          @include absCenter;
         }
       }
 
       &--2 {
         position: relative;
+
         & h4 {
           width: 85%;
           margin-left: auto;
           margin-right: auto;
         }
+
         p {
           width: 70%;
           margin-left: auto;
@@ -74,12 +74,10 @@
 
       &--3 {
         position: relative;
+
         &::after {
           content: url(../img/journal-3-logo.png);
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          @include absCenter;
         }
 
         @include response(phone) {
@@ -89,11 +87,13 @@
 
       &--4 {
         position: relative;
+
         & h4 {
           width: 70%;
           margin-left: auto;
           margin-right: auto;
         }
+
         p {
           width: 70%;
           margin-left: auto;
@@ -125,12 +125,10 @@
 
       &--5 {
         position: relative;
+
         &::after {
           content: url(../img/journal-5-logo.png);
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          @include absCenter;
         }
 
         @include response(phone) {
@@ -140,11 +138,13 @@
 
       &--6 {
         position: relative;
+
         & h4 {
           width: 50%;
           margin-left: auto;
           margin-right: auto;
         }
+
         p {
           width: 70%;
           margin-left: auto;
