@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(../fonts/bringin.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -345,8 +346,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 0; }
 
-.lazyload,
-.lazyloading {
+.lazyload {
   opacity: 0; }
 
 .lazyloaded {
