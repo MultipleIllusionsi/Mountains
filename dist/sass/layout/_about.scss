@@ -39,7 +39,7 @@
       text-align: center;
     }
 
-    & > * {
+    &>* {
       width: 80%;
 
       @include response(tab-land) {
@@ -54,6 +54,10 @@
     & h3 {
       position: relative;
       display: inline-block;
+
+      @include response(phone) {
+        font-size: 3.2rem;
+      }
 
       @include waves;
     }

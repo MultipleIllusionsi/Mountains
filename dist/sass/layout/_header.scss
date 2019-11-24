@@ -98,22 +98,10 @@
           padding: 2rem 0;
         }
       }
-
-      @include response(phone) {
-        position: fixed;
-        background-color: #333;
-        right: -105%;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        padding: 8rem 0;
-        z-index: 10000;
-        flex-direction: column;
-        transition: 0.7s;
-      }
     }
 
     &__btn {
+      display: block;
       margin-left: auto;
 
       @include response(phone) {
@@ -186,7 +174,7 @@
   }
 }
 
-label.show-menu {
+.show-menu {
   display: none;
   order: 4;
 
@@ -222,13 +210,23 @@ label.show-menu {
   }
 }
 
-#menu {
-  position: absolute;
-  visibility: hidden;
-  z-index: -1111;
-
+#nav {
   @include response(phone) {
-    &:checked~.header-nav__links {
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 8rem 0;
+    z-index: 10000;
+    flex-direction: column;
+    transition: 0.7s;
+
+    &:not(:target) {
+      right: -105%;
+    }
+
+    &:target {
       right: 0;
     }
   }

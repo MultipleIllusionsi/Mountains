@@ -9,6 +9,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
   @include response(tab-land) {
     font-size: 56.25%;
@@ -19,7 +20,7 @@ html {
   }
 
   @include response(phone) {
-    font-size: 30%;
+    font-size: 40%;
   }
 }
 
