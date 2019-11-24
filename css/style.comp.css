@@ -312,7 +312,8 @@ template {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -321,7 +322,7 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 30%; } }
+      font-size: 40%; } }
 
 body {
   font-family: "Times New Roman", Times, serif;
@@ -385,7 +386,7 @@ h1 {
   font-size: 1.6rem; }
   @media only screen and (max-width: 37.5em) {
     .text-tertiary {
-      font-size: 1.8rem; } }
+      font-size: 2rem; } }
 
 .heading-4 {
   color: #212121;
@@ -397,7 +398,7 @@ h1 {
   letter-spacing: 0.255rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-4 {
-      font-size: 1.8rem; } }
+      font-size: 2rem; } }
 
 .heading-5 {
   color: #16b5ef;
@@ -409,7 +410,7 @@ h1 {
   letter-spacing: 0.174rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-5 {
-      font-size: 1.3rem; } }
+      font-size: 2rem; } }
 
 .pagination {
   color: #212121;
@@ -499,19 +500,8 @@ h1 {
           .header-nav__links-item {
             font-size: 4rem;
             padding: 2rem 0; } }
-      @media only screen and (max-width: 37.5em) {
-        .header-nav__links {
-          position: fixed;
-          background-color: #333;
-          right: -105%;
-          top: 0;
-          width: 100vw;
-          height: 100vh;
-          padding: 8rem 0;
-          z-index: 10000;
-          flex-direction: column;
-          transition: 0.7s; } }
     .header-nav__btn {
+      display: block;
       margin-left: auto; }
       @media only screen and (max-width: 37.5em) {
         .header-nav__btn {
@@ -572,11 +562,11 @@ h1 {
     margin-top: 2.5rem;
     width: 50%; }
 
-label.show-menu {
+.show-menu {
   display: none;
   order: 4; }
   @media only screen and (max-width: 37.5em) {
-    label.show-menu {
+    .show-menu {
       display: block;
       background-color: #fff;
       border-radius: 50%;
@@ -603,12 +593,20 @@ label.show-menu {
     .hide-menu-btn {
       display: block; } }
 
-#menu {
-  position: absolute;
-  visibility: hidden;
-  z-index: -1111; }
-  @media only screen and (max-width: 37.5em) {
-    #menu:checked ~ .header-nav__links {
+@media only screen and (max-width: 37.5em) {
+  #nav {
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 8rem 0;
+    z-index: 10000;
+    flex-direction: column;
+    transition: 0.7s; }
+    #nav:not(:target) {
+      right: -105%; }
+    #nav:target {
       right: 0; } }
 
 .about {
@@ -655,6 +653,9 @@ label.show-menu {
     .about-info h3 {
       position: relative;
       display: inline-block; }
+      @media only screen and (max-width: 37.5em) {
+        .about-info h3 {
+          font-size: 3.2rem; } }
       .about-info h3::before {
         content: url(../img/waves.svg);
         display: block;
