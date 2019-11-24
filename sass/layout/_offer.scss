@@ -16,6 +16,7 @@
       url(../img/offer-bc-right.png) right bottom no-repeat;
     background-color: #f6f4f4;
   }
+
   @include response(phone) {
     background: url(../img/offer-big-tree.png) 150% bottom no-repeat/70%,
       url(../img/offer-sm-tree.png) 60% bottom no-repeat/50%,
@@ -49,6 +50,10 @@
       @include response(tab-land) {
         width: 100%;
       }
+
+      @include response(phone) {
+        font-size: 2.5rem;
+      }
     }
 
     &__form {
@@ -60,12 +65,12 @@
       display: flex;
       width: 100%;
       position: relative;
-
       padding-bottom: 25rem;
 
       @include response(phone) {
         padding-bottom: 14rem;
       }
+
       @include response(tab-land) {
         flex-direction: column;
       }
@@ -80,6 +85,10 @@
 
         @include response(tab-land) {
           width: 100%;
+        }
+
+        @include response(phone) {
+          font-size: 2.5rem;
         }
       }
 

@@ -322,7 +322,7 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 40%; } }
+      font-size: 30%; } }
 
 body {
   font-family: "Times New Roman", Times, serif;
@@ -638,7 +638,7 @@ h1 {
         margin: 10rem 0; } }
     @media only screen and (max-width: 37.5em) {
       .about-info {
-        width: 50%;
+        width: 70%;
         margin: 5rem auto;
         padding-left: 0;
         text-align: center; } }
@@ -663,6 +663,9 @@ h1 {
     .about-info p {
       margin-top: 2.7rem;
       display: inline-block; }
+      @media only screen and (max-width: 37.5em) {
+        .about-info p {
+          font-size: 2.5rem; } }
     .about-info button {
       margin-top: 3rem; }
   .about-img {
@@ -725,113 +728,68 @@ h1 {
     width: calc(100% / 3);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    position: relative; }
     @media only screen and (max-width: 37.5em) {
       .journal-content > * {
         width: calc(100% / 2); } }
     .journal-content > * > img {
       object-fit: cover; }
-  .journal-content__item--1 {
-    position: relative; }
-    .journal-content__item--1::after {
-      content: url(../img/journal-1-logo.png);
+    .journal-content > *:nth-child(odd)::after {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-  .journal-content__item--2 {
-    position: relative; }
-    .journal-content__item--2 h4 {
-      width: 85%;
-      margin-left: auto;
-      margin-right: auto; }
-    .journal-content__item--2 p {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto; }
-    .journal-content__item--2::after {
+    .journal-content > *:nth-child(even)::after {
       content: "";
       height: 2rem;
       width: 2rem;
       background-color: white;
       position: absolute;
-      top: 4rem;
-      left: -1rem;
-      transform: rotate(45deg);
-      z-index: 100; }
-  .journal-content__item--3 {
-    position: relative; }
-    .journal-content__item--3::after {
-      content: url(../img/journal-3-logo.png);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 37.5em) {
-      .journal-content__item--3 {
-        order: 4; } }
-  .journal-content__item--4 {
-    position: relative; }
-    .journal-content__item--4 h4 {
+      z-index: 100;
+      transform: rotate(45deg); }
+    .journal-content > *:nth-child(even) h4,
+    .journal-content > *:nth-child(even) p {
       width: 70%;
       margin-left: auto;
       margin-right: auto; }
-    .journal-content__item--4 p {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto; }
-    .journal-content__item--4::after {
-      content: "";
-      height: 2rem;
-      width: 2rem;
-      background-color: white;
-      position: absolute;
-      top: 4rem;
-      right: -1rem;
-      transform: rotate(45deg);
-      z-index: 100; }
       @media only screen and (max-width: 37.5em) {
-        .journal-content__item--4::after {
-          top: initial;
-          bottom: -1rem;
-          right: 4rem; } }
+        .journal-content > *:nth-child(even) h4,
+        .journal-content > *:nth-child(even) p {
+          width: 85%;
+          font-size: 2.5rem; } }
+  .journal-content__item--1::after {
+    content: url(../img/journal-1-logo.png); }
+  .journal-content__item--2::after {
+    top: 4rem;
+    left: -1rem; }
+  .journal-content__item--3::after {
+    content: url(../img/journal-3-logo.png); }
+  @media only screen and (max-width: 37.5em) {
+    .journal-content__item--3 {
+      order: 4; } }
+  .journal-content__item--4::after {
+    top: 4rem;
+    right: -1rem; }
     @media only screen and (max-width: 37.5em) {
-      .journal-content__item--4 {
-        order: 3; } }
-  .journal-content__item--5 {
-    position: relative; }
-    .journal-content__item--5::after {
-      content: url(../img/journal-5-logo.png);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 37.5em) {
-      .journal-content__item--5 {
-        order: 5; } }
-  .journal-content__item--6 {
-    position: relative; }
-    .journal-content__item--6 h4 {
-      width: 50%;
-      margin-left: auto;
-      margin-right: auto; }
-    .journal-content__item--6 p {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto; }
-    .journal-content__item--6::after {
-      content: "";
-      height: 2rem;
-      width: 2rem;
-      background-color: white;
-      position: absolute;
-      top: -1rem;
-      left: 4rem;
-      transform: rotate(45deg);
-      z-index: 100; }
-    @media only screen and (max-width: 37.5em) {
-      .journal-content__item--6 {
-        order: 6; } }
+      .journal-content__item--4::after {
+        top: initial;
+        bottom: -1rem;
+        right: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .journal-content__item--4 {
+      order: 3; } }
+  .journal-content__item--5::after {
+    content: url(../img/journal-5-logo.png); }
+  @media only screen and (max-width: 37.5em) {
+    .journal-content__item--5 {
+      order: 5; } }
+  .journal-content__item--6::after {
+    top: -1rem;
+    left: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .journal-content__item--6 {
+      order: 6; } }
 
 .offer {
   padding-right: 1.5rem;
@@ -871,6 +829,9 @@ h1 {
       @media only screen and (max-width: 75em) {
         .offer-content__text {
           width: 100%; } }
+      @media only screen and (max-width: 37.5em) {
+        .offer-content__text {
+          font-size: 2.5rem; } }
     .offer-content__form {
       margin-top: 3rem;
       width: 100%;
@@ -899,6 +860,9 @@ h1 {
         @media only screen and (max-width: 75em) {
           .offer-content__form input {
             width: 100%; } }
+        @media only screen and (max-width: 37.5em) {
+          .offer-content__form input {
+            font-size: 2.5rem; } }
       .offer-content__form::after {
         content: "";
         position: absolute;
@@ -1093,7 +1057,7 @@ h1 {
             font-size: 1.4rem; } }
         @media only screen and (max-width: 37.5em) {
           .travel-list__item-text p {
-            font-size: 2rem; } }
+            font-size: 2.5rem; } }
       .travel-list__item-price {
         margin-bottom: 1.3rem;
         display: flex;
@@ -1260,7 +1224,7 @@ h1 {
         top: -7rem; }
       @media only screen and (max-width: 37.5em) {
         .footer-article__text {
-          font-size: 2.2rem; } }
+          font-size: 2.5rem; } }
     .footer-article__author {
       padding-left: 1.7rem;
       color: #36aeea;
@@ -1274,7 +1238,7 @@ h1 {
         font-weight: 400; }
       @media only screen and (max-width: 37.5em) {
         .footer-article__author {
-          font-size: 2.4rem; } }
+          font-size: 2.5rem; } }
   .footer-contacts {
     margin-top: 17rem;
     background: url(../img/footer-bc-form.jpg) no-repeat;
@@ -1321,7 +1285,7 @@ h1 {
           font-size: 2rem; } }
       @media only screen and (max-width: 37.5em) {
         .footer-contacts__text {
-          font-size: 2.4rem; } }
+          font-size: 2.5rem; } }
     .footer-contacts__form {
       margin-top: 3.5rem;
       display: flex;
@@ -1345,7 +1309,7 @@ h1 {
           color: #cccccc; }
         @media only screen and (max-width: 37.5em) {
           .footer-contacts__form input {
-            font-size: 2.2rem; } }
+            font-size: 2.5rem; } }
       .footer-contacts__form-btn {
         width: 100%;
         margin-bottom: 4rem; }
@@ -1361,7 +1325,7 @@ h1 {
         flex-direction: column;
         justify-content: space-around; } }
     .footer-social__item:first-of-type {
-      color: #618a97;
+      color: #d2d2d2;
       font-family: open-sans, sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -1374,7 +1338,7 @@ h1 {
       font-style: normal;
       font-weight: 400;
       font-size: 2.7rem;
-      color: #7cc2d4; }
+      color: #d2d2d2; }
     .footer-social__item-sublist {
       display: flex;
       align-items: center; }
@@ -1424,3 +1388,6 @@ h1 {
   transition: all 0.4s; }
   .btn:hover {
     background-color: #1486bf; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      font-size: 2rem; } }

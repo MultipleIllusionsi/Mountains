@@ -23,6 +23,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      position: relative;
 
       @include response(phone) {
         width: calc(100% / 2);
@@ -32,52 +33,55 @@
         // for each img inside the list
         object-fit: cover;
       }
-    }
 
-    &__item {
-      &--1 {
-        position: relative;
-
+      &:nth-child(odd) {
         &::after {
-          content: url(../img/journal-1-logo.png);
           @include absCenter;
         }
       }
 
-      &--2 {
-        position: relative;
-
-        & h4 {
-          width: 85%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        p {
-          width: 70%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
+      &:nth-child(even) {
         &::after {
           content: "";
           height: 2rem;
           width: 2rem;
           background-color: white;
           position: absolute;
+          z-index: 100;
+          transform: rotate(45deg);
+        }
+
+        & h4,
+        p {
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto;
+
+          @include response(phone) {
+            width: 85%;
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+
+    &__item {
+      &--1 {
+        &::after {
+          content: url(../img/journal-1-logo.png);
+        }
+      }
+
+      &--2 {
+        &::after {
           top: 4rem;
           left: -1rem;
-          transform: rotate(45deg);
-          z-index: 100;
         }
       }
 
       &--3 {
-        position: relative;
-
         &::after {
           content: url(../img/journal-3-logo.png);
-          @include absCenter;
         }
 
         @include response(phone) {
@@ -86,30 +90,9 @@
       }
 
       &--4 {
-        position: relative;
-
-        & h4 {
-          width: 70%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        p {
-          width: 70%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
         &::after {
-          content: "";
-          height: 2rem;
-          width: 2rem;
-          background-color: white;
-          position: absolute;
           top: 4rem;
           right: -1rem;
-          transform: rotate(45deg);
-          z-index: 100;
 
           @include response(phone) {
             top: initial;
@@ -124,11 +107,8 @@
       }
 
       &--5 {
-        position: relative;
-
         &::after {
           content: url(../img/journal-5-logo.png);
-          @include absCenter;
         }
 
         @include response(phone) {
@@ -137,30 +117,9 @@
       }
 
       &--6 {
-        position: relative;
-
-        & h4 {
-          width: 50%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        p {
-          width: 70%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
         &::after {
-          content: "";
-          height: 2rem;
-          width: 2rem;
-          background-color: white;
-          position: absolute;
           top: -1rem;
           left: 4rem;
-          transform: rotate(45deg);
-          z-index: 100;
         }
 
         @include response(phone) {

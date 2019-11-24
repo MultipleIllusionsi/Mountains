@@ -91,7 +91,7 @@
       }
 
       @include response(phone) {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
       }
     }
 
@@ -106,7 +106,7 @@
       }
 
       @include response(phone) {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -160,7 +160,7 @@
       }
 
       @include response(phone) {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
       }
     }
 
@@ -188,7 +188,7 @@
         }
 
         @include response(phone) {
-          font-size: 2.2rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -214,7 +214,7 @@
 
     &__item {
       &:first-of-type {
-        color: #618a97;
+        color: rgb(210, 210, 210);
         @include sans(regular);
         font-size: 1.8rem;
 
@@ -226,7 +226,7 @@
       &:last-of-type {
         @include roboto(regular);
         font-size: 2.7rem;
-        color: #7cc2d4;
+        color: rgb(210, 210, 210);
       }
 
       &-sublist {
