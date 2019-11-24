@@ -33,7 +33,7 @@
     }
 
     @include response(phone) {
-      width: 50%;
+      width: 70%;
       margin: 5rem auto;
       padding-left: 0;
       text-align: center;
@@ -65,6 +65,10 @@
     & p {
       margin-top: 2.7rem;
       display: inline-block;
+
+      @include response(phone) {
+        font-size: 2.5rem;
+      }
     }
 
     & button {
