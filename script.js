@@ -1,25 +1,19 @@
 (function() {
   document.addEventListener("DOMContentLoaded", function() {
-    var lazyLoadImg = [].slice.call(
-      document.querySelectorAll(".lazyload")
-    );
+    const lazyLoadImg = [].slice.call(document.querySelectorAll(".lazyload"));
 
     if ("IntersectionObserver" in window) {
-      let sectionsObserver = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach(({ isIntersecting, target }) => {
-            if (isIntersecting) {
-              target.classList.remove("lazyload");
-              target.classList.add("lazyloaded");
-              sectionsObserver.unobserve(target);
-            }
-          });
-        }
-      );
+      let loadImgObserver = new IntersectionObserver((entries, _observer) => {
+        entries.forEach(({ isIntersecting, target }) => {
+          if (isIntersecting) {
+            target.classList.remove("lazyload");
+            target.classList.add("lazyloaded");
+            loadImgObserver.unobserve(target);
+          }
+        });
+      });
 
-      lazyLoadImg.forEach(section =>
-        sectionsObserver.observe(section)
-      );
+      lazyLoadImg.forEach(section => loadImgObserver.observe(section));
     } else {
       lazyLoadImg.forEach(section => {
         section.classList.remove("lazyload");

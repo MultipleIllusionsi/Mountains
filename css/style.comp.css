@@ -475,7 +475,7 @@ h1 {
         font-weight: 700;
         text-transform: uppercase;
         position: relative;
-        padding: 1rem; }
+        margin: 1rem; }
         .header-nav__links-item:last-child {
           display: none; }
           @media only screen and (max-width: 37.5em) {
@@ -1378,12 +1378,12 @@ label.show-menu {
     .footer-social__item-sublist {
       display: flex;
       align-items: center; }
-      .footer-social__item-sublist > *:not(:last-of-type) {
-        margin-right: 1rem; }
-      .footer-social__item-sublist > * > * {
+      .footer-social__item-sublist img {
         height: 4rem;
         width: 4rem;
         cursor: pointer; }
+      .footer-social__item-sublist > * {
+        padding: 0 1rem; }
 
 .btn-outline {
   width: 15.3rem;
