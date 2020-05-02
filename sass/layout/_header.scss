@@ -1,11 +1,11 @@
 .header {
   padding-top: 2rem;
   background: url(../img/bc_rectangle.png) center 220px no-repeat,
-    url(../img/header-img.jpg) center no-repeat/cover;
+    center/cover no-repeat url(../img/header-img.jpg);
   height: 700px;
 
   @include response(tab-land) {
-    background: url(../img/header-img.jpg) center no-repeat/cover;
+    background: center/cover no-repeat url(../img/header-img.jpg);
     height: auto;
   }
 
